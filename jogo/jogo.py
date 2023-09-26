@@ -1,7 +1,9 @@
 class Dificuldade:
     nivel = ''
 
-    @staticmethod
+    def __init__(self, nivel):
+        Dificuldade.nivel = nivel
+
     def escolherNivel():
         Dificuldade.nivel = str(input('Escolha a dificuldade: ')) 
 
