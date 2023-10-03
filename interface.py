@@ -42,7 +42,8 @@ for linha in range(tabuleiro[0]):
     linhas = []
     for coluna in range(tabuleiro[1]):
 
-from tkinter import *
+        casa = Button(tela) 
+        casa['command'] = lambda casa = casa: verificarCasa(casa)
 
 class Frame1(Frame):
     def __init__(self, ws):
