@@ -1,3 +1,46 @@
+import random
+from tkinter import *
+
+tela = Tk()
+
+# tamanho do tabuleiro fácil
+tabuleiro = [8, 8]
+# Tamanho padrão de casas
+tamanhoDaCasa = 32
+
+tela.title("Campo Minado")
+x = tabuleiro[0] * tamanhoDaCasa
+y = tabuleiro[1] * tamanhoDaCasa
+
+matrizDoJogo = []
+# Casas randomizadas
+casasRandomicas = []
+
+# Função para verificar a casa
+def verificarCasa(casaEspecifica):
+    xX = -1
+    yY = -1
+
+    for linhaAtual in range(len(matrizDoJogo)): 
+        for colunaAtual in range(len(matrizDoJogo[linhaAtual])):
+            if matrizDoJogo[linhaAtual][colunaAtual] == casaEspecifica:
+                xX = colunaAtual
+                yY = linhaAtual
+            
+            
+    # print(f'Casa verificada: {xX},{yY} \t tem bomba? {casasRandomicas[xX][yY]}')
+
+    minado = casasRandomicas[xX][yY]
+    if(minado):
+        casaEspecifica['text'] = 'X'
+    
+
+# Geração do tabuleiro
+tela.geometry(f"{x}x{y}")
+
+for linha in range(tabuleiro[0]):
+    linhas = []
+    for coluna in range(tabuleiro[1]):
 
 from tkinter import *
 
