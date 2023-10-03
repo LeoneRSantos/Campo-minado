@@ -64,19 +64,5 @@ print(casasRandomicas)
 tela.mainloop()
 
 
-class Win(Tk):
 
-    def __init__(self, ws):
-        Tk.__init__(self, ws)
-        self.ws = ws
-        self.title('Campo Minado')
-        self.geometry('500x500')
-        self.main()
 
-    def main(self):
-        self.w = Frame1(self)
-        self.w.pack()
-
-if __name__== "__main__":
-    app = Win(None)
-    app.mainloop()
