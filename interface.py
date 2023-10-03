@@ -45,11 +45,21 @@ for linha in range(tabuleiro[0]):
         casa = Button(tela) 
         casa['command'] = lambda casa = casa: verificarCasa(casa)
 
-class Frame1(Frame):
-    def __init__(self, ws):
-        Frame.__init__(self, ws, bg="#006699")
-        self.ws = ws
-        self.widgets()
+        posx = linha*tamanhoDaCasa
+        posy = coluna*tamanhoDaCasa
+        casa.place(x=posx, y=posy, width=tamanhoDaCasa, height=tamanhoDaCasa) 
+        linhas.append(casa)
+    matrizDoJogo.append(linhas)
+
+for l in range(tabuleiro[0]):
+    novoValor = []
+    for c in range(tabuleiro[1]):
+        temBomba = bool(random.randint(0,1))
+        novoValor.append(temBomba)
+    casasRandomicas.append(novoValor)
+print(casasRandomicas)
+
+
 
     def widgets(self):
         self.grid(row=0, column=0, padx=20, pady=20) # margins
