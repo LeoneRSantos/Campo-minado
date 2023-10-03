@@ -61,8 +61,7 @@ print(casasRandomicas)
 
 
 
-    def widgets(self):
-        self.grid(row=0, column=0, padx=20, pady=20) # margins
+tela.mainloop()
 
 
 class Win(Tk):
