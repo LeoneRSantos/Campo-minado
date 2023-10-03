@@ -8,8 +8,7 @@ class Frame1(Frame):
         self.widgets()
 
     def widgets(self):
-        self.text = Label(self, text="This label is on the frame ")
-        self.text.grid(row=0, column=0, padx=20, pady=20) # margins
+        self.grid(row=0, column=0, padx=20, pady=20) # margins
 
 
 class Win(Tk):
