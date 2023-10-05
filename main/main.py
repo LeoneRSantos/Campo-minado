@@ -1,4 +1,4 @@
-from jogo.jogo import Dificuldade
+from jogo.dificuldade import Dificuldade
 from jogo.tabuleiro import Tabuleiro
 
 def main():
