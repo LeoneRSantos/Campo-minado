@@ -70,10 +70,10 @@ class TelaDoJogo:
 
         # print(f'Casa verificada: {xX},{yY} \t tem bomba? {casasRandomicas[xX][yY]}')
 
-        minado = TelaDoJogo.casasRandomicas[xX][yY]
-        if(minado):
-            casaEspecifica['text'] = '💣'
-            print('💣')
+        minado = self.casasRandomicas[xX][yY]
+        if (minado):
+            casaEspecifica['text'] = "B"
+            self.revelarBombas()
             # emoji.emojize(":bomb:")
         
 
