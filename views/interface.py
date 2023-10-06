@@ -62,9 +62,9 @@ class TelaDoJogo:
         xX = -1
         yY = -1
 
-        for linhaAtual in range(len(TelaDoJogo.matrizDoJogo)): 
-            for colunaAtual in range(len(TelaDoJogo.matrizDoJogo[linhaAtual])):
-                if TelaDoJogo.matrizDoJogo[linhaAtual][colunaAtual] == casaEspecifica:
+        for linhaAtual in range(len(self.matrizDoJogo)):
+            for colunaAtual in range(len(self.matrizDoJogo[linhaAtual])):
+                if self.matrizDoJogo[linhaAtual][colunaAtual] == casaEspecifica:
                     xX = colunaAtual
                     yY = linhaAtual
                 
