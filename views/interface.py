@@ -58,7 +58,7 @@ class TelaDoJogo:
                 bombas_colocadas += 1
 
     # Função para verificar a casa
-    def verificarCasa(casaEspecifica):
+    def verificarCasa(self, casaEspecifica):
         xX = -1
         yY = -1
 
