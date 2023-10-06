@@ -11,9 +11,17 @@ class TelaDoJogo:
     # Tamanho padrão de casas
     tamanhoDaCasa = 32
 
-    tela.title("Campo Minado")
-    x = tabuleiro[0] * tamanhoDaCasa
-    y = tabuleiro[1] * tamanhoDaCasa
+    def __init__(self, linhas, colunas, bombas):
+        self.linhas = linhas
+        self.colunas = colunas
+        self.bombas = bombas
+        self.matrizDoJogo = []
+        self.casasRandomicas = []
+        self.tela.title('Baiano')
+        self.x = self.linhas * self.tamanhoDaCasa
+        self.y = self.colunas * self.tamanhoDaCasa
+        self.criarTabuleiro()
+        self.adicionarBombas()
 
     matrizDoJogo = []
     # Casas randomizadas
