@@ -68,7 +68,6 @@ class TelaDoJogo:
                     xX = colunaAtual
                     yY = linhaAtual
                 
-                
         # print(f'Casa verificada: {xX},{yY} \t tem bomba? {casasRandomicas[xX][yY]}')
 
         minado = TelaDoJogo.casasRandomicas[xX][yY]
