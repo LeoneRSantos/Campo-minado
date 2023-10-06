@@ -2,6 +2,7 @@ import random
 import emoji
 from tkinter import *
 
+
 class TelaDoJogo:
     tela = Tk()
 
