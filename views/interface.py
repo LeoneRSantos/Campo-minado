@@ -103,9 +103,4 @@ class TelaDoJogo:
 
 
     def jogar(self):
-
-        TelaDoJogo.tela.mainloop()
-
-
-
-
+        self.tela.mainloop()
