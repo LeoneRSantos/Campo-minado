@@ -1,5 +1,5 @@
 from jogo.dificuldade import Dificuldade
-from main.main import main
+from main import main
 
 def testeNivelAEscolher(): 
     assert Dificuldade.nivel == ''
