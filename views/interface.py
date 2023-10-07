@@ -7,7 +7,7 @@ class TelaDoJogo:
     tela = Tk()
 
     # Tamanho padrão de casas
-    tamanhoDaCasa = 32
+    tamanhoDaCasa = 28
 
     def __init__(self, linhas, colunas, bombas):
         self.linhas = linhas
