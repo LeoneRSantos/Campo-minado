@@ -1,10 +1,11 @@
-from jogo.dificuldade import Dificuldade
-from jogo.tabuleiro import Tabuleiro
-from views.interface import TelaDoJogo
+# from views.interface import TelaDoJogo
+from views.tela_inicial import TelaInicial
 
 def main():
-    t = TelaDoJogo(8,8,10) 
-    t.jogar()
+    # t = TelaDoJogo(24,24,100) 
+    # t.jogar()
+    t = TelaInicial('Fácil') 
+    t.iniciarJogo()
    
 
 if __name__ == '__main__':
