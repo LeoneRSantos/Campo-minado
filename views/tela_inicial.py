@@ -11,7 +11,8 @@ class TelaInicial:
         self.iniciarJogo()
 
     def escolherDificuldade(self):
-        if (self.dificuldade == 'facil'):
+        if (self.dificuldade == 'fácil'):
+            d = Dificuldade('fácil')
 
             tf = TelaDoJogo(8, 8, 10)
 
