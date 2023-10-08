@@ -53,4 +53,4 @@ def testeEscolherNivelIntermediário():
 def testeEscolherNiveDificil(): 
     d = Dificuldade('difícil')
 
-    assert d.escolherNivel() == 'difícil'
+    assert d.escolherNivel() == 'difícil' 
