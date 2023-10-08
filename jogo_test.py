@@ -6,6 +6,9 @@ from views.tela_inicial import TelaInicial
 def testeNivelAEscolher(): 
     assert Dificuldade.nivel == ''
 
+def testeTamanhoDaCasa(): 
+    assert TelaDoJogo.tamanhoDaCasa == 28
+
 def testeNivelEscolhido():
     assert main != ''
 
