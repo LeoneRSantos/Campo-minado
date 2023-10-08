@@ -11,7 +11,7 @@ def testeNivelEscolhido():
 def testeEscolherNivelFacil(): 
     d = Dificuldade('fácil')
 
-    assert d.escolherNivel() == 'fácil'
+    assert d.escolherNivel() == 'fácil' 
 
 def testeEscolherFacilPeloClique():
     d = Dificuldade('fácil') 
