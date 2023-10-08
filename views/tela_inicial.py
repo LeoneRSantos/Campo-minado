@@ -50,6 +50,13 @@ class TelaInicial:
     def retornarDificuldade():
         return TelaInicial.dificuldade 
     
+    @staticmethod
+    def indicarComeco(): 
+        if TelaInicial.comecar == False:
+            TelaInicial.comecar = True
+        else: 
+            TelaInicial.comecar = False
+
     def iniciarJogo(self):
 
         self.t.geometry('300x200')
