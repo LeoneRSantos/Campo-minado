@@ -33,7 +33,7 @@ def testeEscolherDificilPeloClique():
 
     TelaInicial.dificuldade = 'difícil'
 
-    assert d.nivel == TelaInicial.dificuldade
+    assert d.nivel == TelaInicial.dificuldade 
 
 
 def testeEscolherNivelIntermediário(): 
