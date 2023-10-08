@@ -54,3 +54,8 @@ def testeEscolherNiveDificil():
     d = Dificuldade('difícil')
 
     assert d.escolherNivel() == 'difícil' 
+
+def testarDimensoesDoFacil(): 
+    t = TelaDoJogo(8,8,10)
+
+    assert t.linhas == 8 and t.colunas == 8
