@@ -35,6 +35,11 @@ def testeEscolherDificilPeloClique():
 
     assert d.nivel == TelaInicial.dificuldade 
 
+def testarSeComecaCoMenu():
+    v = TelaInicial.comecar 
+
+    assert TelaInicial.indicarComeco() != v
+
 
 def testeEscolherNivelIntermediário(): 
     d = Dificuldade('intermediário')
