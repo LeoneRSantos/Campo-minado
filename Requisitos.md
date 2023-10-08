@@ -2,7 +2,7 @@
 
 - [x] O nível deve começar como "vazio", isto é, com o nível a escolher. 
   - Testar se o nível começa como "vazio"
-- Deve ser possível escolher um nível de dificuldade. 
+- [x] Deve ser possível escolher um nível de dificuldade. 
   - Testar se é possível escolher o nível fácil. 
   - Testar se é possível escolher o nível intermediário. 
   - Testar se é possível escolher o nível difícil. 
