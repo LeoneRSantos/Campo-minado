@@ -27,7 +27,7 @@ class TelaInicial:
             d.escolherNivel()
 
     def escolherFacil(self):
-        self.dificuldade = 'facil'
+        self.dificuldade = 'fácil'
 
         print(self.dificuldade)
 
