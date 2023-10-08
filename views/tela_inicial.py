@@ -24,14 +24,7 @@ class TelaInicial:
         elif (self.dificuldade == 'difícil'):
             d = Dificuldade('difícil')
 
-            tf.jogar()
-
-        elif (self.dificuldade == 'dificil'):
-            self.t.destroy()
-
-            tf = TelaDoJogo(24, 24, 100)
-
-            tf.jogar()
+            d.escolherNivel()
 
     def escolherFacil(self):
         self.dificuldade = 'facil'
