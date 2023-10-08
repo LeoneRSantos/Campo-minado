@@ -12,6 +12,29 @@ def testeEscolherNivelFacil():
 
     assert d.escolherNivel() == 'fácil'
 
+def testeEscolherFacilPeloClique():
+    d = Dificuldade('fácil') 
+
+    TelaInicial.dificuldade = 'fácil'
+
+    assert d.nivel == TelaInicial.dificuldade
+
+def testeEscolherInterPeloClique():
+    d = Dificuldade('intermediário') 
+
+    TelaInicial.dificuldade = 'intermediário'
+
+    assert d.nivel == TelaInicial.dificuldade
+
+
+def testeEscolherDificilPeloClique():
+    d = Dificuldade('difícil') 
+
+    TelaInicial.dificuldade = 'difícil'
+
+    assert d.nivel == TelaInicial.dificuldade
+
+
 def testeEscolherNivelIntermediário(): 
     d = Dificuldade('intermediário')
 
