@@ -18,8 +18,9 @@ class TelaInicial:
 
             d.escolherNivel()
 
-        elif (self.dificuldade == 'intermediário'):
+        elif (nivel == 'intermediário'):
             d = Dificuldade('intermediário')
+            TelaInicial.auxDificuldade = nivel
 
             d.escolherNivel()
 
