@@ -19,8 +19,7 @@ class TelaInicial:
         elif (self.dificuldade == 'intermediário'):
             d = Dificuldade('intermediário')
 
-        elif (self.dificuldade == 'intermediario'):
-            self.t.destroy()
+            d.escolherNivel()
 
             tf = TelaDoJogo(10, 16, 30)
 
