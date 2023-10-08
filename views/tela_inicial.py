@@ -71,4 +71,6 @@ class TelaInicial:
         dificil = Button(self.t, text='Difícil', command=self.escolherDificil)
         dificil.pack(fill=BOTH, expand=True, padx=8, pady=8)
 
+        TelaInicial.indicarComeco()
+
         self.t.mainloop()
