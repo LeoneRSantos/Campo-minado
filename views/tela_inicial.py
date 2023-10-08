@@ -48,8 +48,8 @@ class TelaInicial:
 
     @staticmethod
     def retornarDificuldade():
-        return TelaInicial.dificuldade
-
+        return TelaInicial.dificuldade 
+    
     def iniciarJogo(self):
 
         self.t.geometry('300x200')
