@@ -16,8 +16,8 @@ class TelaInicial:
 
             d.escolherNivel()
 
-            tf.jogar()
-            # self.t.destroy()
+        elif (self.dificuldade == 'intermediário'):
+            d = Dificuldade('intermediário')
 
         elif (self.dificuldade == 'intermediario'):
             self.t.destroy()
