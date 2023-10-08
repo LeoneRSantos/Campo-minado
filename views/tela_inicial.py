@@ -21,7 +21,8 @@ class TelaInicial:
 
             d.escolherNivel()
 
-            tf = TelaDoJogo(10, 16, 30)
+        elif (self.dificuldade == 'difícil'):
+            d = Dificuldade('difícil')
 
             tf.jogar()
 
