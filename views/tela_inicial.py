@@ -43,7 +43,11 @@ class TelaInicial:
     def escolherDificil(self):
         self.dificuldade = 'difícil'
 
-        self.escolherDificuldade()
+        self.escolherDificuldade(self.dificuldade)
+
+    @staticmethod
+    def retornarDificuldade():
+        return TelaInicial.dificuldade
 
     def iniciarJogo(self):
 
