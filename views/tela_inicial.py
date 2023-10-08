@@ -24,8 +24,9 @@ class TelaInicial:
 
             d.escolherNivel()
 
-        elif (self.dificuldade == 'difícil'):
+        elif (nivel == 'difícil'):
             d = Dificuldade('difícil')
+            TelaInicial.auxDificuldade = nivel
 
             d.escolherNivel()
 
