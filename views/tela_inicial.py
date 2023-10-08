@@ -14,7 +14,7 @@ class TelaInicial:
         if (self.dificuldade == 'fácil'):
             d = Dificuldade('fácil')
 
-            tf = TelaDoJogo(8, 8, 10)
+            d.escolherNivel()
 
             tf.jogar()
             # self.t.destroy()
