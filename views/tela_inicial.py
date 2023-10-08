@@ -39,7 +39,7 @@ class TelaInicial:
     def escolherDificil(self):
         self.dificuldade = 'difícil'
 
-        print(self.dificuldade)
+        self.escolherDificuldade()
 
     def iniciarJogo(self):
 
