@@ -1,6 +1,5 @@
 from tkinter import *
-
-from views.interface import TelaDoJogo
+from jogo.dificuldade import Dificuldade
 
 
 class TelaInicial:
