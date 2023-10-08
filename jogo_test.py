@@ -1,5 +1,6 @@
 from jogo.dificuldade import Dificuldade
 from main import main
+from views.tela_inicial import TelaInicial
 
 def testeNivelAEscolher(): 
     assert Dificuldade.nivel == ''
