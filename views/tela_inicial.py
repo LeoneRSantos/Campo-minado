@@ -4,6 +4,7 @@ from jogo.dificuldade import Dificuldade
 
 class TelaInicial:
     t = Tk()
+    dificuldade = ''
 
     def __init__(self, dificuldade):
         self.t.title('Campo Minado')
