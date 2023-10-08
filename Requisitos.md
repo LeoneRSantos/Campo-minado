@@ -7,4 +7,8 @@
   - Testar se é possível escolher o nível intermediário. 
   - Testar se é possível escolher o nível difícil. 
   - Testar se tem um menu de escolha.
-- O tabuleiro deve ser de dimensão 8x8 no nível fácil.
+- [x] O tabuleiro deve ser de dimensão 8x8 no nível fácil. 
+  - Testar se o tabuleiro de "fácil" tem dimensão 8x8. 
+  - Testar se o tabuleiro está vazio no início. 
+  - Testar se é possível marcar no tabuleiro. 
+  - Testar se a marcação do tabueiro está dentro dele.
