@@ -33,7 +33,7 @@ class TelaInicial:
     def escolherFacil(self):
         self.dificuldade = 'fácil'
 
-        self.escolherDificuldade()
+        self.escolherDificuldade(self.dificuldade)
 
     def escolherIntermediario(self):
         self.dificuldade = 'intermediário'
