@@ -68,4 +68,11 @@ def testarTabuleiroVazioNoFacil():
 def testarMarcacao():
     t = TelaDoJogo(8,8,10)
 
-    assert t.casasRandomicas[2][2] == True or t.casasRandomicas[2][2] == False 
+    assert t.casasRandomicas[2][2] == True or t.casasRandomicas[2][2] == False  
+
+def testarMarcacaoDentroDoTabuleiro(): 
+    t = TelaDoJogo(8,8,10)
+
+    for i in range(t.linhas): 
+        for c in range(t.colunas): 
+            assert t.casasRandomicas[i][c] == True or t.casasRandomicas[i][c]==False
