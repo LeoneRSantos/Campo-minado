@@ -64,3 +64,8 @@ def testarTabuleiroVazioNoFacil():
     t = TelaDoJogo(8,8,10) 
 
     assert len(t.matrizDoJogo) == 8 and len(t.casasRandomicas) == 8
+
+def testarMarcacao():
+    t = TelaDoJogo(8,8,10)
+
+    assert t.casasRandomicas[2][2] == True or t.casasRandomicas[2][2] == False 
