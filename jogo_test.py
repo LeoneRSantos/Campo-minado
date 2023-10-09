@@ -63,4 +63,4 @@ def testarDimensoesDoFacil():
 def testarTabuleiroVazioNoFacil(): 
     t = TelaDoJogo(8,8,10) 
 
-    assert len(t.matrizDoJogo) == 8
+    assert len(t.matrizDoJogo) == 8 and len(t.casasRandomicas) == 8
