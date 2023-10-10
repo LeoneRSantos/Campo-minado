@@ -73,7 +73,14 @@ class TelaDoJogo:
         if (minado):
             casaEspecifica['text'] = "B"
             self.revelarBombas()
-            # emoji.emojize(":bomb:")
+            janelaPerdeu = Toplevel(self.tela)
+            janelaPerdeu.title("Você perdeu")
+            janelaPerdeu.geometry("300x200")
+
+            def voltar():
+                janelaPerdeu.destroy()
+            Label(janelaPerdeu, text="Infelizmente você encontrou uma bomba").pack()
+            Button(janelaPerdeu, text="Voltar", command=voltar).pack()
 
     def jogar(self):
         self.tela.mainloop()
