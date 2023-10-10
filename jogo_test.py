@@ -112,6 +112,11 @@ def testarTabuleiroVazioNoIntermediario():
 def testarMarcacaoDentroDoTabuleiroIntermediario():
     t = TelaDoJogo(10, 16, 30)
 
-    for i in range(t.linhas): 
-        for c in range(t.colunas): 
-            assert t.casasRandomicas[i][c] == True or t.casasRandomicas[i][c]==False
+    for i in range(t.linhas):
+        for c in range(t.colunas):
+            assert t.casasRandomicas[i][c] == True or t.casasRandomicas[i][c] == False
+
+def testarMarcacaoIntermediario():
+    t = TelaDoJogo(10, 16, 30)
+
+    assert t.casasRandomicas[8][10] == True or t.casasRandomicas[8][10] == False
