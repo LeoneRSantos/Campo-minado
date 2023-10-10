@@ -77,3 +77,6 @@ class TelaDoJogo:
 
     def jogar(self):
         self.tela.mainloop()
+
+    def encerrarJogo(self):
+        self.tela.destroy()
