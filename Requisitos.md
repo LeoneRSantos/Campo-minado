@@ -11,4 +11,10 @@
   - Testar se o tabuleiro de "fácil" tem dimensão 8x8. 
   - Testar se o tabuleiro está vazio no início. 
   - Testar se é possível marcar no tabuleiro. 
-  - Testar se a marcação do tabueiro está dentro dele.
+  - Testar se a marcação do tabueiro está dentro dele. 
+  - Testar a distribuição de bombas no tabuleiro.
+- [] O jogo deve ter um tabuleiro de jogo com dimensões 10x16 para intermediário  
+  - Testar se o jogo em “Intermediário” tem 10x16
+  - Testar se o tabuleiro está vazio no início
+  - Testar se é possível marcar no tabuleiro
+  - Testar se a posição de jogada está dentro do tabuleiro
