@@ -13,6 +13,7 @@ class TelaDoJogo:
         self.linhas = linhas
         self.colunas = colunas
         self.bombas = bombas
+        self.jogou = False
         self.matrizDoJogo = []
         self.casasRandomicas = []
         self.tela.title('Campo Minado')
@@ -65,7 +66,7 @@ class TelaDoJogo:
                 if self.matrizDoJogo[linhaAtual][colunaAtual] == casaEspecifica:
                     xX = colunaAtual
                     yY = linhaAtual
-
+        self.jogou = True
         # print(f'Casa verificada: {xX},{yY} \t tem bomba? {casasRandomicas[xX][yY]}')
 
         minado = self.casasRandomicas[xX][yY]
