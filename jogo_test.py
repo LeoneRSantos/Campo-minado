@@ -1,3 +1,4 @@
+import pytest
 from jogo.dificuldade import Dificuldade
 from main import main
 from views.tela_do_jogo import TelaDoJogo
