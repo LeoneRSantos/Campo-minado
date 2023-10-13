@@ -56,6 +56,15 @@ class TelaDoJogo:
                 self.casasRandomicas[x][y] = True
                 bombas_colocadas += 1
 
+    def calcularBombasAdjacentes(self, x, y):
+        qtdBombasPerto = 0
+        for i in range(-1, 2):
+            for j in range(-1, 2):
+                if 0 <= x + i < self.linhas and 0 <= y + j < self.colunas:
+                    if self.casasRandomicas[x + i][y + j] == True:
+                        qtdBombasPerto += 1
+        return qtdBombasPerto
+
     # Função para verificar a casa
     def verificarCasa(self, casaEspecifica):
         xX = -1
