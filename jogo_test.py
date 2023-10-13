@@ -138,3 +138,8 @@ def testarTabuleiroVazioNoDificil():
     t = TelaDoJogo(24, 24, 100)
 
     assert t.jogou == False
+
+def testarMarcacaoDificil():
+    t = TelaDoJogo(24, 24, 100)
+
+    assert t.casasRandomicas[12][5] == True or t.casasRandomicas[22][15] == False
