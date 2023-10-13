@@ -2,10 +2,10 @@ from views.tela_do_jogo import TelaDoJogo
 # from views.tela_inicial import TelaInicial
 
 def main():
-    # t = TelaDoJogo(24,24,100) 
-    # t.jogar()
-    t = TelaInicial('Fácil') 
-    t.iniciarJogo()
+    t = TelaDoJogo(8,8,10) 
+    t.jogar()
+    # t = TelaInicial('Fácil') 
+    # t.iniciarJogo()
    
 
 if __name__ == '__main__':
