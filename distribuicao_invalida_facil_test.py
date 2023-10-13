@@ -2,7 +2,6 @@ import pytest
 
 from views.tela_do_jogo import TelaDoJogo
 
-
 @pytest.mark.parametrize("matriz,linhas, colunas, esperado", [
     ([[True, False, True, False, True, False, True, False],
       [True, False, True, False, True, False, True, False],
@@ -79,22 +78,15 @@ from views.tela_do_jogo import TelaDoJogo
       
       ([[False, False, False, False, True, False, True, False],
       [False, False, False, False, True, False, True, False],
-      [True, False, True, False, False, False, False, False],
       [False, False, False, False, False, False, False, False],
       [False, False, False, False, False, False, False, False],
       [False, False, False, False, False, False, False, False],
-      [False, False, True, True, False, False, False, False],
+      [False, False, False, False, False, False, False, False],
+      [True, True, True, True, False, False, False, False],
       [False, False, False, False, False, False, True, True]], 8, 8, 10,),
       
-      ([[False, False, False, False, True, False, True, False],
-      [True, False, True, False, True, False, True, False],
-      [False, False, False, False, False, False, False, False],
-      [False, False, False, False, False, False, False, False],
-      [False, False, False, False, False, False, False, False],
-      [False, False, False, False, False, False, False, False],
-      [True, True, False, False, False, False, False, False],
-      [False, False, False, False, False, False, True, True]], 8, 8, 10,)])
-def testarCalcularNumeroDeBombasFacil(matriz, linhas, colunas, esperado):
+      ])
+def testarCalcularNumeroInvalidoDeBombasFacil(matriz, linhas, colunas, esperado):
     t = TelaDoJogo(8,8,10)
     cont = 1
     for l in range(linhas):
