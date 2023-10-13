@@ -133,3 +133,8 @@ def testarDimensoesDificil():
             contColunas = c+1
 
     assert contLinhas == 24 and contColunas == 24 
+
+def testarTabuleiroVazioNoDificil():
+    t = TelaDoJogo(24, 24, 100)
+
+    assert t.jogou == False
