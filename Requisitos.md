@@ -27,7 +27,7 @@
   - Testar se a posição de jogada está dentro do tabuleiro
 
 **5** 
-- [] O jogo deve ter um tabuleiro de jogo com dimensões 24x24 para difícil.
+- [x] O jogo deve ter um tabuleiro de jogo com dimensões 24x24 para difícil.
   - Testar se o jogo em “Difícil” tem 24x24
   - Testar se o tabuleiro está vazio no início
   - Testar se é possível marcar no tabuleiro
