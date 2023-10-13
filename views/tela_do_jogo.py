@@ -76,7 +76,11 @@ class TelaDoJogo:
                     xX = colunaAtual
                     yY = linhaAtual
         self.jogou = True
-        # print(f'Casa verificada: {xX},{yY} \t tem bomba? {casasRandomicas[xX][yY]}')
+        # print(f'Casa verificada: {xX},{yY} \t tem bomba? {self.casasRandomicas[xX][yY]}')
+        if self.casasRandomicas[xX][yY] == False:
+           vizinhos = self.calcularBombasAdjacentes(xX, yY) 
+           casaEspecifica['text'] = str(vizinhos)
+
 
         minado = self.casasRandomicas[xX][yY]
         if (minado):
