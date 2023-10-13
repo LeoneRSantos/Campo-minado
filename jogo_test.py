@@ -120,3 +120,16 @@ def testarMarcacaoIntermediario():
     t = TelaDoJogo(10, 16, 30)
 
     assert t.casasRandomicas[8][10] == True or t.casasRandomicas[8][10] == False
+
+def testarDimensoesDificil():
+    t = TelaDoJogo(24,24,100) 
+
+    contLinhas = 0
+    contColunas = 0
+
+    for l in range(t.linhas):
+        contLinhas = l+1
+        for c in range(t.colunas):
+            contColunas = c+1
+
+    assert contLinhas == 24 and contColunas == 24 
