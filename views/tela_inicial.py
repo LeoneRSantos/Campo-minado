@@ -39,7 +39,7 @@ class TelaInicial:
         t.jogar()
         self.tela.destroy()
 
-        self.escolherDificuldade(self.dificuldade)
+        self.escolherDificuldade(TelaInicial.dificuldade)
 
     def escolherIntermediario(self):
         self.dificuldade = 'intermediário'
