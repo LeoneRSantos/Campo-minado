@@ -1,5 +1,5 @@
-from views.tela_do_jogo import TelaDoJogo
-# from views.tela_inicial import TelaInicial
+from tkinter import *
+from views.tela_inicial import TelaInicial
 
 def main():
     t = TelaDoJogo(8,8,10) 
