@@ -4,7 +4,6 @@ from views.tela_do_jogo import TelaDoJogo
 
 
 class TelaInicial:
-    t = Tk()
     dificuldade = ''
     comecar = False
 
