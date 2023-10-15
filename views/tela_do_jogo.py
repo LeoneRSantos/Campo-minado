@@ -1,10 +1,8 @@
 import random
-import emoji
 from tkinter import *
 
 
 class TelaDoJogo:
-    tela = Tk()
 
     # Tamanho padrão de casas
     tamanhoDaCasa = 28
