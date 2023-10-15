@@ -25,7 +25,7 @@ class TelaDoJogo:
         self.adicionarBombas()
 
     def criarTabuleiro(self):
-        self.tela.geometry(f"{self.x}x{self.y}")
+        self.root.geometry(f"{self.x}x{self.y}")
 
         for linha in range(self.linhas):
             linhas = []
