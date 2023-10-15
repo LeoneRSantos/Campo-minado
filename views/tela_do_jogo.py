@@ -18,7 +18,7 @@ class TelaDoJogo:
         self.jogou = False
         self.matrizDoJogo = []
         self.casasRandomicas = []
-        self.tela.title('Campo Minado')
+        self.root.title('Campo Minado')
         self.x = self.linhas * self.tamanhoDaCasa
         self.y = self.colunas * self.tamanhoDaCasa
         self.criarTabuleiro()
