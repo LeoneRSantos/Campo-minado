@@ -101,4 +101,4 @@ class TelaDoJogo:
         self.root.mainloop()
 
     def encerrarJogo(self):
-        self.tela.destroy()
+        self.root.destroy()
