@@ -98,7 +98,7 @@ class TelaDoJogo:
             Button(janelaPerdeu, text="Voltar", command=voltar).pack()
 
     def jogar(self):
-        self.tela.mainloop()
+        self.root.mainloop()
 
     def encerrarJogo(self):
         self.tela.destroy()
