@@ -69,6 +69,7 @@ class TelaInicial:
             TelaInicial.comecar = False
 
     def iniciarJogo(self):
+        TelaInicial.indicarComeco()
 
         self.t.geometry('300x200')
 
