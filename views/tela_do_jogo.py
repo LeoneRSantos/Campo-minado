@@ -30,7 +30,7 @@ class TelaDoJogo:
         for linha in range(self.linhas):
             linhas = []
             for coluna in range(self.colunas):
-                casa = Button(self.tela)
+                casa = Button(self.root)
                 casa['command'] = lambda casa=casa: self.verificarCasa(casa)
                 posx = linha * self.tamanhoDaCasa
                 posy = coluna * self.tamanhoDaCasa
