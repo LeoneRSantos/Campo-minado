@@ -8,9 +8,9 @@ class TelaInicial:
     dificuldade = ''
     comecar = False
 
-    def __init__(self, dificuldade):
-        self.t.title('Campo Minado')
-        TelaInicial.dificuldade = dificuldade
+    def __init__(self,tela):
+        self.tela = tela
+        self.tela.title('Campo Minado')
         self.iniciarJogo()
 
     def escolherDificuldade(self, nivel):
