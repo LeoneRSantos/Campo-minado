@@ -80,7 +80,7 @@ class TelaDoJogo:
         self.jogou = True
         # print(f'Casa verificada: {xX},{yY} \t tem bomba? {self.casasRandomicas[xX][yY]}')
         if self.casasRandomicas[xX][yY] == False:
-           vizinhos = self.calcularBombasAdjacentes(xX, yY) 
+           vizinhos = self.calcularBombasAdjacentes(yY, xX) 
            casaEspecifica['text'] = str(vizinhos)
 
 
