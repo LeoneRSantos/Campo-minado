@@ -1,3 +1,4 @@
+from tkinter import Tk
 import pytest
 
 from views.tela_do_jogo import TelaDoJogo
@@ -87,10 +88,11 @@ from views.tela_do_jogo import TelaDoJogo
       
       ])
 def testarCalcularNumeroInvalidoDeBombasFacil(matriz, linhas, colunas, esperado):
-    t = TelaDoJogo(8,8,10)
+    tela = Tk()
+    t = TelaDoJogo(8,8,10,tela)
     cont = 1
     for l in range(linhas):
         for c in range(colunas):
             if matriz[l][c] == True:
               cont += 1
-    assert t.bombas < cont and t.bombas == esperado
+    assert t.bombas < cont and t.bombas > 9 and t.bombas == esperado 
