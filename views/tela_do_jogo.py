@@ -9,7 +9,9 @@ class TelaDoJogo:
     # Tamanho padrão de casas
     tamanhoDaCasa = 28
 
-    def __init__(self, linhas, colunas, bombas):
+    def __init__(self, linhas, colunas, bombas, root):
+        self.perdeu = False
+        self.root = root
         self.linhas = linhas
         self.colunas = colunas
         self.bombas = bombas
