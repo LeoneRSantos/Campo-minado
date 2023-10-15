@@ -2,10 +2,8 @@ from tkinter import *
 from views.tela_inicial import TelaInicial
 
 def main():
-    t = TelaDoJogo(8,8,10) 
-    t.jogar()
-    # t = TelaInicial('Fácil') 
-    # t.iniciarJogo()
+    tela = Tk()
+    t = TelaInicial(tela) 
    
 
 if __name__ == '__main__':
