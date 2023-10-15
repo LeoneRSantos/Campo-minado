@@ -44,6 +44,9 @@ class TelaInicial:
     def escolherIntermediario(self):
         self.dificuldade = 'intermediário'
 
+        t = TelaDoJogo(16,10,30, self.tela)
+        t.jogar()
+
         self.escolherDificuldade(self.dificuldade)
 
     def escolherDificil(self):
