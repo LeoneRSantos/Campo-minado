@@ -88,7 +88,7 @@ class TelaDoJogo:
         if (minado):
             casaEspecifica['text'] = "B"
             self.revelarBombas()
-            janelaPerdeu = Toplevel(self.tela)
+            janelaPerdeu = Toplevel(self.root)
             janelaPerdeu.title("Você perdeu")
             janelaPerdeu.geometry("300x200")
 
