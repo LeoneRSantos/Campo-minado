@@ -71,18 +71,18 @@ class TelaInicial:
     def iniciarJogo(self):
         TelaInicial.indicarComeco()
 
-        self.t.geometry('300x200')
+        self.tela.geometry('300x200')
 
-        facil = Button(self.t, text='Fácil', command=self.escolherFacil)
+        facil = Button(self.tela, text='Fácil', command=self.escolherFacil)
         facil.pack(fill=BOTH, expand=True, padx=8, pady=8)
 
-        intermediario = Button(self.t, text='Intermediário',
+        intermediario = Button(self.tela, text='Intermediário',
                                command=self.escolherIntermediario)
         intermediario.pack(fill=BOTH, expand=True, padx=8, pady=8)
 
-        dificil = Button(self.t, text='Difícil', command=self.escolherDificil)
+        dificil = Button(self.tela, text='Difícil', command=self.escolherDificil)
         dificil.pack(fill=BOTH, expand=True, padx=8, pady=8)
 
         TelaInicial.indicarComeco()
 
-        self.t.mainloop()
+        self.tela.mainloop()
