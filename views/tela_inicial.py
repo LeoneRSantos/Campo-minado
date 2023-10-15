@@ -33,7 +33,11 @@ class TelaInicial:
             d.escolherNivel()
 
     def escolherFacil(self):
-        self.dificuldade = 'fácil'
+        TelaInicial.dificuldade = 'fácil' 
+
+        t = TelaDoJogo(8,8,10, self.tela)
+        t.jogar()
+        self.tela.destroy()
 
         self.escolherDificuldade(self.dificuldade)
 
