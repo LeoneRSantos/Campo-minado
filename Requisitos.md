@@ -79,9 +79,9 @@
   - [x] Testar se as bombas são distribuídas de forma aleatória 
 
 **10**
-- [] Todas as zonas do tabuleiro devem começar cobertas e sem bandeira. 
+- [x] Todas as zonas do tabuleiro devem começar cobertas e sem bandeira. 
   - [x] Verificar se as zonas estão todas cobertas
-  - Verificar se nenhuma zona tem bandeira 
+  - [x] Verificar se nenhuma zona tem bandeira 
 
 **11**
 - [] O jogador deve ser capaz de marcar uma zona com uma bandeira para indicar que ele considera ter uma bomba.
