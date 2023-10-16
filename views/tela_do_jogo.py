@@ -105,6 +105,9 @@ class TelaDoJogo:
                 janelaPerdeu.destroy()
             Label(janelaPerdeu, text="Infelizmente você encontrou uma bomba").pack()
             Button(janelaPerdeu, text="Voltar", command=voltar).pack()
+            for linhaAtual in range(len(self.matrizDoJogo)):
+                for colunaAtual in range(len(self.matrizDoJogo[linhaAtual])):
+                    self.matrizDoJogo[linhaAtual][colunaAtual]['state'] = "disabled"
 
     def jogar(self):
         self.root.mainloop()
