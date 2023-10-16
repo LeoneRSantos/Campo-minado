@@ -23,6 +23,12 @@ class TelaDoJogo:
         self.criarTabuleiro()
         self.adicionarBombas()
 
+    def adicionarBandeira(self):
+        self.qtdBandeiras += 1
+
+        if self.qtdBandeiras > self.bombas:
+            self.qtdBandeiras = self.bombas
+
     def criarTabuleiro(self):
         self.root.geometry(f"{self.x}x{self.y}")
 
