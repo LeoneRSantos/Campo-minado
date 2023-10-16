@@ -17,17 +17,26 @@ class TelaInicial:
             d = Dificuldade('fácil') 
             TelaInicial.auxDificuldade = nivel
 
+            for widget in self.root.winfo_children():
+                widget.destroy()
+
             d.escolherNivel()
 
         elif (nivel == 'intermediário'):
             d = Dificuldade('intermediário')
             TelaInicial.auxDificuldade = nivel
 
+            for widget in self.root.winfo_children():
+                widget.destroy()
+
             d.escolherNivel()
 
         elif (nivel == 'difícil'):
             d = Dificuldade('difícil')
             TelaInicial.auxDificuldade = nivel
+
+            for widget in self.root.winfo_children():
+                widget.destroy()
 
             d.escolherNivel()
 
