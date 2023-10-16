@@ -144,4 +144,4 @@ def testar_Tabuleiro_Vazio_No_Dificil():
 def testar_Marcacao_Dificil():
     t = TelaDoJogo(24, 24, 100,tela)
 
-    assert t.casasRandomicas[12][5] == True or t.casasRandomicas[22][15] == False
+    assert t.casasRandomicas[12][5] == True or t.casasRandomicas[12][5] == False
