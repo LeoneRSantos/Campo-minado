@@ -74,9 +74,9 @@
   - Testar se o tabuleiro é de tamanho vazio[x]
 
 **9**
-- [] O tabuleiro deve ser gerado aleatoriamente a cada partida, garantindo que as bombas estejam distribuídas de forma aleatória. 
-  - Testar se o tabuleiro é gerado
-  - Testar se as bombas são distribuídas de forma aleatória 
+- [x] O tabuleiro deve ser gerado aleatoriamente a cada partida, garantindo que as bombas estejam distribuídas de forma aleatória. 
+  - [x] Testar se o tabuleiro é gerado
+  - [x] Testar se as bombas são distribuídas de forma aleatória 
 
 **10**
 - [] Todas as zonas do tabuleiro devem começar cobertas e sem bandeira. 
