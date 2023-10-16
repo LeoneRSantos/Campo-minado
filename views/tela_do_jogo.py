@@ -30,6 +30,14 @@ class TelaDoJogo:
             self.qtdBandeiras = self.bombas 
         casa['text'] = 'P'
 
+    def removerBandeira(self,casa):
+        if casa['text'] == 'P':
+            self.qtdBandeiras -= 1
+
+            if self.qtdBandeiras > self.bombas:
+                self.qtdBandeiras = self.bombas 
+            casa['text'] = ''
+
     def criarTabuleiro(self):
         self.root.geometry(f"{self.x}x{self.y}")
 
