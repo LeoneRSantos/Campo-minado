@@ -8,6 +8,7 @@ class TelaDoJogo:
     tamanhoDaCasa = 28
 
     def __init__(self, linhas, colunas, bombas, root):
+        self.qtdBandeiras = 0
         self.perdeu = False
         self.root = root
         self.linhas = linhas
