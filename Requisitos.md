@@ -80,7 +80,7 @@
 
 **10**
 - [] Todas as zonas do tabuleiro devem começar cobertas e sem bandeira. 
-  - Verificar se as zonas estão todas cobertas
+  - [x] Verificar se as zonas estão todas cobertas
   - Verificar se nenhuma zona tem bandeira 
 
 **11**
