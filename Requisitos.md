@@ -48,16 +48,17 @@
 
 
 **7**
-- [] O número de bombas no tabuleiro deve ser fixo 30 bombas para intermediário.
-  - verificar se o número de bombas do tabuleiro é maior que 30
-  - verificar se o número de bombas do tabuleiro é menor que 30
-  - verificar se o tabuleiro só contém bombas
-  - verificar se o tabuleiro não contém bombas
-  - Testar se as bombas estão posicionadas em locais válidos
-  - Testar se existe alguma bomba no tabuleiro
-  - Testar se o número de bombas é negativo
-  - Testar se as bombas são válidas (ex: no código precisa ser inteiro, passamos uma string para testar)
-  - Testar se existem espaços suficientes para as bombas
+- [x] O número de bombas no tabuleiro deve ser fixo 30 bombas para intermediário.
+  - verificar se o número de bombas do tabuleiro é maior que 30[x]
+  - verificar se o número de bombas do tabuleiro é menor que 30[x]
+  - verificar se o tabuleiro só contém bombas [x]
+  - verificar se o tabuleiro não contém bombas[x]
+  - Testar se as bombas estão posicionadas em locais válidos[x]
+  - Testar se existe alguma bomba no tabuleiro[x]
+  - Testar se o número de bombas é negativo[x]
+  - Testar se as bombas são válidas (ex: no código precisa ser inteiro, passamos uma string para testar)[x]
+  - Testar se existem espaços suficientes para as bombas[x]
+  - Testar se o tabuleiro é de tamanho vazio[x]
 
 **8**
 - [] O número de bombas no tabuleiro deve ser fixo 100 bombas para difícil.
