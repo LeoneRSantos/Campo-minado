@@ -1,3 +1,4 @@
+from tkinter import Tk
 import pytest
 
 from views.tela_do_jogo import TelaDoJogo
@@ -95,7 +96,8 @@ from views.tela_do_jogo import TelaDoJogo
       [True, True, False, False, False, False, False, False],
       [False, False, False, False, False, False, True, True]], 8, 8, 10,)])
 def testarCalcularNumeroDeBombasFacil(matriz, linhas, colunas, esperado):
-    t = TelaDoJogo(8,8,10)
+    t = Tk()
+    t = TelaDoJogo(8,8,10,t)
     cont = 0
     for l in range(linhas):
         for c in range(colunas):
