@@ -1,5 +1,7 @@
 from tkinter import *
+
 from views.tela_do_jogo import TelaDoJogo
+
 
 tela = Tk()
 
