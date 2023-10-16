@@ -85,6 +85,9 @@ class TelaDoJogo:
                     yY = linhaAtual
         self.jogou = True
         # print(f'Casa verificada: {xX},{yY} \t tem bomba? {self.casasRandomicas[xX][yY]}')
+        
+        casaEspecifica.bind("<Button-3>", self.adicionarBandeira)
+
         if self.casasRandomicas[xX][yY] == False:
            vizinhos = self.calcularBombasAdjacentes(yY, xX) 
            casaEspecifica['text'] = str(vizinhos)
