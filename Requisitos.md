@@ -146,9 +146,13 @@
   - [ ] Testar se o jogador é informado que a zona selecionada já está descoberta
 
 **16** 
-- [ ] O jogo deve revelar o número de bombas adjacentes a uma zona quando ela for descoberta.
-  - [ ] Testar se a zona clicada contém bomba
-  - [ ] Testar se o cálculo de adjacência está correto
+- [x] O jogo deve revelar o número de bombas adjacentes a uma zona quando ela for descoberta.
+  - [x] Testar se a zona clicada contém bomba no nível fácil.
+  - [x] Testar se a zona clicada contém bomba no nível intermediário.
+  - [x] Testar se a zona clicada contém bomba no nível difícil.
+  - [x] Testar se o cálculo de adjacência está correto no nível fácil.
+  - [x] Testar se o cálculo de adjacência está correto no nível intermediário.
+  - [x] Testar se o cálculo de adjacência está correto no nível difícil.
 
 **17**
 - [ ] O software deve mostrar o tempo decorrido durante a partida. 
