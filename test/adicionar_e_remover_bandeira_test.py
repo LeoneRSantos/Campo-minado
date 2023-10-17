@@ -170,3 +170,121 @@ def testar_posicao_clicada_dificil():
                 clique = False
 
     assert clique == True
+
+def testar_se_a_zona_clicada_tem_bandeira_facil():
+    t = TelaDoJogo(8,8,10,tela)
+    casaTemBandeira = False
+
+    casa = Button(tela)
+    t.adicionarBandeira(casa)
+    
+    if casa['text'] == 'P':
+        casaTemBandeira = True
+
+    assert casaTemBandeira == True
+
+def testar_se_a_zona_clicada_tem_bandeira_intermediario():
+    t = TelaDoJogo(10,16,30,tela)
+    casaTemBandeira = False
+
+    casa = Button(tela)
+    t.adicionarBandeira(casa)
+    
+    if casa['text'] == 'P':
+        casaTemBandeira = True
+
+    assert casaTemBandeira == True
+
+def testar_se_a_zona_clicada_tem_bandeira_dificil():
+    t = TelaDoJogo(24,24,100,tela)
+    casaTemBandeira = False
+
+    casa = Button(tela)
+    t.adicionarBandeira(casa)
+    
+    if casa['text'] == 'P':
+        casaTemBandeira = True
+
+    assert casaTemBandeira == True
+
+def testar_se_a_zona_clicada_esta_descoberta_facil():
+    t = TelaDoJogo(8,8,10,tela)
+    descoberta = False
+
+    for l in range(t.linhas):
+        for c in range(t.colunas):
+            if t.casasRandomicas[l][c] == True:
+                if t.matrizDoJogo[l][c]['text'] == 'B':
+                    descoberta = True
+            if t.casasRandomicas[l][c] == False:
+                if t.matrizDoJogo[l][c]['text'] == str(int):
+                    descoberta = True
+
+    assert descoberta == False
+
+def testar_se_a_zona_clicada_esta_descoberta_intermediario():
+    t = TelaDoJogo(10,16,30,tela)
+    descoberta = False
+
+    for l in range(t.linhas):
+        for c in range(t.colunas):
+            if t.casasRandomicas[l][c] == True:
+                if t.matrizDoJogo[l][c]['text'] == 'B':
+                    descoberta = True
+            if t.casasRandomicas[l][c] == False:
+                if t.matrizDoJogo[l][c]['text'] == str(int):
+                    descoberta = True
+
+    assert descoberta == False
+
+def testar_se_a_zona_clicada_esta_descoberta_dificil():
+    t = TelaDoJogo(24,24,100,tela)
+    descoberta = False
+
+    for l in range(t.linhas):
+        for c in range(t.colunas):
+            if t.casasRandomicas[l][c] == True:
+                if t.matrizDoJogo[l][c]['text'] == 'B':
+                    descoberta = True
+            if t.casasRandomicas[l][c] == False:
+                if t.matrizDoJogo[l][c]['text'] == str(int):
+                    descoberta = True
+
+    assert descoberta == False
+
+def testar_se_a_zona_foi_marcada_com_bandeira_apos_clique_facil():
+    t = TelaDoJogo(8,8,10,tela)
+    casaTemBandeira = False
+
+    casa = Button(tela)
+    t.adicionarBandeira(casa)
+    
+    if casa['text'] == 'P':
+        casaTemBandeira = True
+
+    assert casaTemBandeira == True and t.qtdBandeiras > 0
+
+def testar_se_a_zona_foi_marcada_com_bandeira_apos_clique_intermediario():
+    t = TelaDoJogo(10,16,30,tela)
+    casaTemBandeira = False
+
+    casa = Button(tela)
+    t.adicionarBandeira(casa)
+    
+    if casa['text'] == 'P':
+        casaTemBandeira = True
+
+    assert casaTemBandeira == True and t.qtdBandeiras > 0
+
+
+def testar_se_a_zona_foi_marcada_com_bandeira_apos_clique_dificil():
+    t = TelaDoJogo(24,24,100,tela)
+    casaTemBandeira = False
+
+    casa = Button(tela)
+    t.adicionarBandeira(casa)
+    
+    if casa['text'] == 'P':
+        casaTemBandeira = True
+
+    assert casaTemBandeira == True and t.qtdBandeiras > 0

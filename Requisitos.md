@@ -108,27 +108,33 @@
 
 
 **12**
-- [ ] O jogador deve ser capaz de remover uma bandeira previamente colocada em uma zona.
-  - [ ] Testar se a zona que ele clicou é uma zona com bandeira no nível fácil;
-  - [ ] Testar se a zona que ele clicou é uma zona com bandeira no nível intermediário;
-  - [ ] Testar se a zona que ele clicou é uma zona com bandeira no nível difícil;
-  - [ ] Testar se a zona que ele clicou é uma zona descoberta no nível fácil
-  - [ ] Testar se a zona que ele clicou é uma zona descoberta no nível intermediário;
-  - [ ] Testar se a zona que ele clicou é uma zona descoberta no nível difícil
-  - [ ] Testar se a zona que ele clicou é uma zona coberta no nível fácil.
-  - [ ] Testar se a zona que ele clicou é uma zona coberta no nível intermediário.
-  - [ ] Testar se a zona que ele clicou é uma zona coberta no nível difícil.
-  - [ ] Testar se a zona foi marcada com bandeira após o click no nível fácil;
-  - [ ] Testar se a zona foi marcada com bandeira após o click no nível intermediário;
-  - [ ] Testar se a zona foi marcada com bandeira após o click no nível difícil;
+- [x] O jogador deve ser capaz de remover uma bandeira previamente colocada em uma zona.
+  - [x] Testar se a zona que ele clicou é uma zona com bandeira no nível fácil;
+  - [x] Testar se a zona que ele clicou é uma zona com bandeira no nível intermediário;
+  - [x] Testar se a zona que ele clicou é uma zona com bandeira no nível difícil;
+  - [x] Testar se a zona que ele clicou é uma zona descoberta no nível fácil
+  - [x] Testar se a zona que ele clicou é uma zona descoberta no nível intermediário;
+  - [x] Testar se a zona que ele clicou é uma zona descoberta no nível difícil
+  - [x] Testar se a zona que ele clicou é uma zona coberta no nível fácil.
+  - [x] Testar se a zona que ele clicou é uma zona coberta no nível intermediário.
+  - [x] Testar se a zona que ele clicou é uma zona coberta no nível difícil.
+  - [x] Testar se a zona foi marcada com bandeira após o click no nível fácil;
+  - [x] Testar se a zona foi marcada com bandeira após o click no nível intermediário;
+  - [x] Testar se a zona foi marcada com bandeira após o click no nível difícil;
 
 **13**
-- [ ] O jogador deve ser capaz de descobrir uma zona que não tenha uma bandeira.
-  - [ ] Testar se a zona que ele clicou tem bandeira
-  - [ ] Testar se a zona que ele clicou já está descoberta
-  - [ ] Testar se a zona que ele clicou está coberta.
-  - [ ] Testar se a zona que ele clicou contém bomba
-  - [ ] testar se a zona foi descoberta após o click
+- [x] O jogador deve ser capaz de descobrir uma zona que não tenha uma bandeira.
+  - [x] Testar se a zona que ele clicou tem bandeira no nível fácil
+  - [x] Testar se a zona que ele clicou tem bandeira no nível intermediário
+  - [x] Testar se a zona que ele clicou tem bandeira no nível difícil.
+  - [x] Testar se a zona que ele clicou já está descoberta no nível fácil.
+  - [x] Testar se a zona que ele clicou já está descoberta no nível intermediário.
+  - [x] Testar se a zona que ele clicou já está descoberta no nível difícil.
+  - [x] Testar se a zona que ele clicou está coberta no nível fácil.
+  - [x] Testar se a zona que ele clicou está coberta no nível intermediário.
+  - [x] Testar se a zona que ele clicou está coberta no nível difícil.
+  - [x] Testar se a zona que ele clicou contém bomba
+  - [x] testar se a zona foi descoberta após o click
 
 **14**
 - [ ] Não deve ser possível descobrir uma zona que tenha uma bandeira. O jogador deve ser notificado se tentar fazê-lo. 
