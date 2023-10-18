@@ -123,6 +123,7 @@ class TelaDoJogo:
         if self.casasRandomicas[xX][yY] == False:
            vizinhos = self.calcularBombasAdjacentes(yY, xX) 
            casaEspecifica['text'] = str(vizinhos)
+           casaEspecifica['state'] = "disabled" 
 
 
         minado = self.casasRandomicas[xX][yY]

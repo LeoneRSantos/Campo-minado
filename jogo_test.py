@@ -11,6 +11,33 @@ tela = Tk()
 def teste_nivel_a_Escolher():
     assert Dificuldade.nivel == ''
 
+def teste_nivel_ja_selecionado_facil():
+    t = TelaDoJogo(8,8,10,tela)
+    selecionado = False 
+
+    if t.clique == True:
+        selecionado = t.clique
+
+    assert selecionado == True
+
+def teste_nivel_ja_selecionado_intermediario():
+    t = TelaDoJogo(10,16,30,tela)
+    selecionado = False 
+
+    if t.clique == True:
+        selecionado = t.clique
+
+    assert selecionado == True
+
+def teste_nivel_ja_selecionado_dificil():
+    t = TelaDoJogo(24,24,100,tela)
+    selecionado = False 
+
+    if t.clique == True:
+        selecionado = t.clique
+
+    assert selecionado == True
+
 
 def teste_Escolher_Nivel_Facil():
     d = Dificuldade('fácil')

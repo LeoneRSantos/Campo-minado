@@ -4,6 +4,10 @@
 
 - [x] O nível deve começar como "vazio", isto é, com o nível a escolher. 
   - [x] Testar se o nível começa como "vazio" 
+  - [x] Testar se o nível já começa selecionado no nível fácil.
+  - [x] Testar se o nível já começa selecionado no nível intermediário.
+  - [x] Testar se o nível já começa selecionado no nível difícil.
+  - [x] Testar entradas inválidas de nível.
 
 <Br>
 
@@ -17,6 +21,7 @@
 
 - [x] O tabuleiro deve ser de dimensão 8x8 no nível fácil. 
   - [x] Testar se o tabuleiro de "fácil" tem dimensão 8x8. 
+  - [x] Testar dimensões inválidas.
   - [x] Testar se o tabuleiro está vazio no início. 
   - [x] Testar se é possível marcar no tabuleiro. 
   - [x] Testar se a marcação do tabueiro está dentro dele. 
@@ -25,7 +30,8 @@
 <Br>
 
 - [x] O jogo deve ter um tabuleiro de jogo com dimensões 10x16 para intermediário  
-  - [x] Testar se o jogo em “Intermediário” tem 10x16
+  - [x] Testar se o jogo em “Intermediário” tem 10x16.
+  - [x] Testar dimensões inválidas.
   - [x] Testar se o tabuleiro está vazio no início
   - [x] Testar se é possível marcar no tabuleiro
   - [x] Testar se a posição de jogada está dentro do tabuleiro
@@ -33,7 +39,8 @@
 <Br>
 
 - [x] O jogo deve ter um tabuleiro de jogo com dimensões 24x24 para difícil.
-  - [x] Testar se o jogo em “Difícil” tem 24x24
+  - [x] Testar se o jogo em “Difícil” tem 24x24.
+  - [x] Testar dimensões inválidas.
   - [x] Testar se o tabuleiro está vazio no início
   - [x] Testar se é possível marcar no tabuleiro
   - [x] Testar se a posição de jogada está dentro do tabuleiro 
@@ -157,8 +164,13 @@
 
 <Br>
 
-- [x] Não deve ser possível colocar uma bandeira em uma zona que já foi descoberta. O jogador deve ser notificado se tentar fazê-lo.
-  - [x] Testar se o jogador é informado que a zona selecionada já está descoberta
+- [x] Não deve ser possível colocar uma bandeira em uma zona que já foi descoberta.
+  - [x] Testar se é possível adicionar bandeira em local descoberto no fácil.
+  - [x] Testar se é possível adicionar bandeira em local descoberto no intermediário.
+  - [x] Testar se é possível adicionar bandeira em local descoberto no difícil.
+  - [x] Testar se o botão é desativado quando a casa é descoberta no facil.
+  - [x] Testar se o botão é desativado quando a casa é descoberta no intermediário.
+  - [x] Testar se o botão é desativado quando a casa é descoberta no difícil.
 
 <Br>
 
