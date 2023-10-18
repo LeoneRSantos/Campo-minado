@@ -6,6 +6,7 @@ from views.tela_do_jogo import TelaDoJogo
 class TelaInicial:
     dificuldade = ''
     comecar = False
+    clique = False
 
     def __init__(self,tela):
         self.tela = tela
