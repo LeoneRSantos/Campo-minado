@@ -101,7 +101,7 @@
   - [x] Verificar se nenhuma zona tem bandeira no nível intermediário;
   - [x] Verificar se nenhuma zona tem bandeira no nível difícil.
 
-<Br><Br>
+<Br>
 
 - [x] O jogador deve ser capaz de marcar uma zona com uma bandeira para indicar que ele considera ter uma bomba.
   - [x] Testar se é possível adicionar uma bandeira no nível fácil;
@@ -197,8 +197,10 @@
 
 <Br>
 
-- [ ] O jogo deve continuar até que uma bomba seja encontrada.
-  - [ ] Testar se todas as áreas com bomba foram descobertas.
+- [x] O jogo deve continuar até que uma bomba seja encontrada.
+  - [x] Testar se o jogo para ao encontrar uma bomba no nível fácil.
+  - [x] Testar se o jogo para ao encontrar uma bomba no nível intermediário.
+  - [x] Testar se o jogo para ao encontrar uma bomba no nível difícil.
 
 <Br>
 
@@ -212,13 +214,21 @@
 
 <Br>
 
-- [ ] O Jogo deve continuar quando um local sem bomba é clicado.
-  - [ ] Testar se o jogo continua quando um local sem bomba é clicado.
-  - [ ] Testar se o jogo para quando um local com bomba é clicado.
+- [x] O Jogo deve continuar quando um local sem bomba é clicado.
+  - [x] Testar se o jogo continua quando um local sem bomba é clicado no nível fácil. 
+  - [x] Testar se o jogo continua quando um local sem bomba é clicado no nível intermediário.
+  - [x] Testar se o jogo continua quando um local sem bomba é clicado no nível difícil.
+  - [x] Testar se o jogo para quando um local com bomba é clicado o nível fácil.
+  - [x] Testar se o jogo para quando um local com bomba é clicado o nível intermediário.
+  - [x] Testar se o jogo para quando um local com bomba é clicado o nível difícil.
 
 <Br>
 
-- [ ] O jogo não deve ser afetado quando uma bandeira é adicionada.
-  - [ ] Testar se o jogo continua ao ser adicionada uma bandeira.
-  - [ ] Testar se o jogo para quando uma bandeira é adicionada.
+- [x] O jogo não deve ser afetado quando uma bandeira é adicionada.
+  - [x] Testar se o jogo continua ao ser adicionada uma bandeira no nível fácil.
+  - [x] Testar se o jogo continua ao ser adicionada uma bandeira no nível intermediário.
+  - [x] Testar se o jogo continua ao ser adicionada uma bandeira no nível difícil.
+  - [x] Testar se o jogo para quando uma bandeira é adicionada no nível fácil.
+  - [x] Testar se o jogo para quando uma bandeira é adicionada no nível intermediário.
+  - [x] Testar se o jogo para quando uma bandeira é adicionada no nível difícil.
 
