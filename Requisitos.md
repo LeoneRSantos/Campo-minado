@@ -2,15 +2,20 @@
 
 <Br>
 
+## Requisitos do jogo
+
+**1**
 - [x] O nível deve começar como "vazio", isto é, com o nível a escolher. 
   - [x] Testar se o nível começa como "vazio" 
   - [x] Testar se o nível já começa selecionado no nível fácil.
   - [x] Testar se o nível já começa selecionado no nível intermediário.
   - [x] Testar se o nível já começa selecionado no nível difícil.
   - [x] Testar entradas inválidas de nível.
+  - [ ] Testar entradas válidas de nível.
 
 <Br>
 
+**2**
 - [x] Deve ser possível escolher um nível de dificuldade. 
   - [x] Testar se é possível escolher o nível fácil. 
   - [x] Testar se é possível escolher o nível intermediário. 
@@ -19,34 +24,40 @@
   
 <Br>
 
+**3**
 - [x] O tabuleiro deve ser de dimensão 8x8 no nível fácil. 
   - [x] Testar se o tabuleiro de "fácil" tem dimensão 8x8. 
   - [x] Testar dimensões inválidas.
   - [x] Testar se o tabuleiro está vazio no início. 
   - [x] Testar se é possível marcar no tabuleiro. 
-  - [x] Testar se a marcação do tabueiro está dentro dele. 
+  - [x] Testar marcações inválidas.
   - [x] Testar a distribuição de bombas no tabuleiro.
 
 <Br>
 
+**4**
 - [x] O jogo deve ter um tabuleiro de jogo com dimensões 10x16 para intermediário  
   - [x] Testar se o jogo em “Intermediário” tem 10x16.
   - [x] Testar dimensões inválidas.
-  - [x] Testar se o tabuleiro está vazio no início
-  - [x] Testar se é possível marcar no tabuleiro
+  - [x] Testar se o tabuleiro está vazio no início.
+  - [ ] Testar marcações inválidas.
+  - [x] Testar se é possível marcar no tabuleiro.
   - [x] Testar se a posição de jogada está dentro do tabuleiro
 
 <Br>
 
+**5**
 - [x] O jogo deve ter um tabuleiro de jogo com dimensões 24x24 para difícil.
   - [x] Testar se o jogo em “Difícil” tem 24x24.
   - [x] Testar dimensões inválidas.
   - [x] Testar se o tabuleiro está vazio no início
-  - [x] Testar se é possível marcar no tabuleiro
+  - [x] Testar se é possível marcar no tabuleiro.
+  - [ ] Testar marcações inválidas.
   - [x] Testar se a posição de jogada está dentro do tabuleiro 
 
 <Br>
 
+**6**
 - [x] O número de bombas no tabuleiro deve ser fixo 10 bombas para fácil.
   - [x] Testar se o número de bombas do tabuleiro é maior que 10 
   - [x] Testar se o número de bombas do tabuleiro é menor que 10 
@@ -62,6 +73,7 @@
 
 <Br>
 
+**7**
 - [x] O número de bombas no tabuleiro deve ser fixo 30 bombas para intermediário.
   - [x] Testar se o número de bombas do tabuleiro é maior que 30
   - [x] Testar se o número de bombas do tabuleiro é menor que 30
@@ -76,6 +88,7 @@
 
 <Br>
 
+**8**
 - [x] O número de bombas no tabuleiro deve ser fixo 100 bombas para difícil.
   - [x] Testar se o número de bombas do tabuleiro é maior que 100
   - [x] Testar se o número de bombas do tabuleiro é menor que 100
@@ -90,6 +103,7 @@
 
 <Br>
 
+**9**
 - [x] O tabuleiro deve ser gerado aleatoriamente a cada partida, garantindo que as bombas estejam distribuídas de forma aleatória. 
   - [x] Testar se o tabuleiro é gerado no nível fácil;
   - [x] Testar se o tabuleiro é gerado no nível intermediário;
@@ -100,6 +114,7 @@
 
 <Br>
 
+**10**
 - [x] Todas as zonas do tabuleiro devem começar cobertas e sem bandeira. 
   - [x] Verificar se as zonas estão todas cobertas no nível fácil.
   - [x] Verificar se as zonas estão todas cobertas no nível intermediário.
@@ -110,6 +125,7 @@
 
 <Br>
 
+**11**
 - [x] O jogador deve ser capaz de marcar uma zona com uma bandeira para indicar que ele considera ter uma bomba.
   - [x] Testar se é possível adicionar uma bandeira no nível fácil;
   - [x] Testar se é possível adicionar uma bandeira no nível intermediário;
@@ -127,6 +143,7 @@
 
 <Br>
 
+**12**
 - [x] O jogador deve ser capaz de remover uma bandeira previamente colocada em uma zona.
   - [x] Testar se a zona que ele clicou é uma zona com bandeira no nível fácil;
   - [x] Testar se a zona que ele clicou é uma zona com bandeira no nível intermediário;
@@ -143,6 +160,7 @@
 
 <Br>
 
+**13**
 - [x] O jogador deve ser capaz de descobrir uma zona que não tenha uma bandeira.
   - [x] Testar se a zona que ele clicou tem bandeira no nível fácil
   - [x] Testar se a zona que ele clicou tem bandeira no nível intermediário
@@ -158,12 +176,14 @@
 
 <Br>
 
+**14**
 - [x] Não deve ser possível descobrir uma zona que tenha uma bandeira. O jogador deve ser notificado se tentar fazê-lo. 
   - [x] Testar se o jogador é informado em caso de descobrir uma zona que tenha bandeira
   - [x] Testar se ao tentar descobrir uma zona com bandeira, o tabuleiro permanece inalterado
 
 <Br>
 
+**15**
 - [x] Não deve ser possível colocar uma bandeira em uma zona que já foi descoberta.
   - [x] Testar se é possível adicionar bandeira em local descoberto no fácil.
   - [x] Testar se é possível adicionar bandeira em local descoberto no intermediário.
@@ -174,6 +194,7 @@
 
 <Br>
 
+**16**
 - [x] O jogo deve revelar o número de bombas adjacentes a uma zona quando ela for descoberta.
   - [x] Testar se a zona clicada contém bomba no nível fácil.
   - [x] Testar se a zona clicada contém bomba no nível intermediário.
@@ -185,6 +206,7 @@
 
 <Br>
 
+**17**
 - [x] O software deve exibir o número de bandeiras disponíveis para uso.
   - [x] Testar se o número de bandeiras está correto para o nível fácil;
   - [x] Testar se o número de bandeiras está correto para o nível intermediário; 
@@ -192,6 +214,7 @@
 
 <Br>
 
+**18**
 - [x] O software deve mostrar todas as casas que continham bombas ao clicar em uma.
   - [x] Testar se existe alguma casa com bomba coberta no nível fácil.
   - [x] Testar se existe alguma casa com bomba coberta no nível intermediário.
@@ -199,6 +222,7 @@
 
 <Br>
 
+**19**
 - [x] O software deve fornecer uma mensagem de derrota quando uma área com bomba for descoberta.
   - [x] Testar se o jogador clicou em uma bomba no nível fácil.
   - [x] Testar se o jogador clicou em uma bomba no nível intermediario.
@@ -209,6 +233,7 @@
 
 <Br>
 
+**20**
 - [x] O jogo deve continuar até que uma bomba seja encontrada.
   - [x] Testar se o jogo para ao encontrar uma bomba no nível fácil.
   - [x] Testar se o jogo para ao encontrar uma bomba no nível intermediário.
@@ -216,6 +241,7 @@
 
 <Br>
 
+**21**
 - [x] O jogador deve ser informado sobre o número de bombas no tabuleiro antes de iniciar o jogo.
   - [x] Testar se o número de bombas está adequado para o nível fácil;
   - [x] Testar se o número de bombas está adequado para o nível intermediário;
@@ -226,6 +252,7 @@
 
 <Br>
 
+**22**
 - [x] O Jogo deve continuar quando um local sem bomba é clicado.
   - [x] Testar se o jogo continua quando um local sem bomba é clicado no nível fácil. 
   - [x] Testar se o jogo continua quando um local sem bomba é clicado no nível intermediário.
@@ -236,6 +263,7 @@
 
 <Br>
 
+**23**
 - [x] O jogo não deve ser afetado quando uma bandeira é adicionada.
   - [x] Testar se o jogo continua ao ser adicionada uma bandeira no nível fácil.
   - [x] Testar se o jogo continua ao ser adicionada uma bandeira no nível intermediário.
