@@ -272,3 +272,27 @@
   - [x] Testar se o jogo para quando uma bandeira é adicionada no nível intermediário.
   - [x] Testar se o jogo para quando uma bandeira é adicionada no nível difícil.
 
+<Br>
+
+## Requisitos da interface
+
+**24**
+- [ ] Deve ser possível começar com uma tela de escolha de nível de dificuldade.
+  - [ ] Testar se a tela mostra todos os níveis que se pode escolher.
+  - [ ] Testar se a tela de escolha de nível de dificuldade é criada.
+  - [ ] Testar se é possível escolher o nível fácil a partir da tela.
+  - [ ] Testar se é possível escolher o nível intermediário a partir da tela.
+  - [ ] Testar se é possível escolher o nível difícil a partir da tela.
+
+**25**
+- [ ] Após a escolha do nível fácil, deve-se gerar a tela do tabuleiro fácil.
+  - [ ] Testar se a tela do tabuleiro fácil é gerada.
+  - [ ] Testar se ela tem a proporção de 8x8 casas.
+  - [ ] Testar se o tabuleiro inicia vazio.
+  - [ ] Testar se é possível marcar dentro do tabuleiro. 
+  - [ ] Testar se é possível descobrir uma bomba ou o número de bombas adjacentes ao se descobrir uma casa do tabuleiro.
+  - [ ] Testar se é possível adicionar uma bandeira em uma casa.
+  - [ ] Testar se é possível remover uma bandeira de uma casa.
+  - [ ] Testar se a casa fica desativada ao ser descoberta e encontrar um número que indique adjacência de bombas.
+  - [ ] Testar se todas as casas do tabuleiro ficam desativadas após encontrar uma boba.
+  - [ ] Testar se todas as bombas do tabuleiro são mostradas ao se descobrir uma bomba.
