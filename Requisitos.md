@@ -296,3 +296,39 @@
   - [ ] Testar se a casa fica desativada ao ser descoberta e encontrar um número que indique adjacência de bombas.
   - [ ] Testar se todas as casas do tabuleiro ficam desativadas após encontrar uma boba.
   - [ ] Testar se todas as bombas do tabuleiro são mostradas ao se descobrir uma bomba.
+
+**26**
+- [ ] Após a escolha do nível intermediário, deve-se gerar a tela do tabuleiro intermediário.
+  - [ ] Testar se a tela do tabuleiro intermediário é gerada.
+  - [ ] Testar se ela tem a proporção de 10x16 casas.
+  - [ ] Testar se o tabuleiro inicia vazio.
+  - [ ] Testar se é possível marcar dentro do tabuleiro. 
+  - [ ] Testar se é possível descobrir uma bomba ou o número de bombas adjacentes ao se descobrir uma casa do tabuleiro.
+  - [ ] Testar se é possível adicionar uma bandeira em uma casa.
+  - [ ] Testar se é possível remover uma bandeira de uma casa.
+  - [ ] Testar se a casa fica desativada ao ser descoberta e encontrar um número que indique adjacência de bombas.
+  - [ ] Testar se todas as casas do tabuleiro ficam desativadas após encontrar uma boba.
+  - [ ] Testar se todas as bombas do tabuleiro são mostradas ao se descobrir uma bomba.
+
+**27**
+- [ ] Após a escolha do nível difícil, deve-se gerar a tela do tabuleiro difícil.
+  - [ ] Testar se a tela do tabuleiro difícil é gerada.
+  - [ ] Testar se ela tem a proporção de 24x24 casas.
+  - [ ] Testar se o tabuleiro inicia vazio.
+  - [ ] Testar se é possível marcar dentro do tabuleiro. 
+  - [ ] Testar se é possível descobrir uma bomba ou o número de bombas adjacentes ao se descobrir uma casa do tabuleiro.
+  - [ ] Testar se é possível adicionar uma bandeira em uma casa.
+  - [ ] Testar se é possível remover uma bandeira de uma casa.
+  - [ ] Testar se a casa fica desativada ao ser descoberta e encontrar um número que indique adjacência de bombas.
+  - [ ] Testar se todas as casas do tabuleiro ficam desativadas após encontrar uma boba.
+  - [ ] Testar se todas as bombas do tabuleiro são mostradas ao se descobrir uma bomba.
+
+**28**
+- [ ] Após escolher o nível de dificuldade, deve-se gerar, tamém, uma tela de tutorial que mostra informações sobre o nível escolhido e como jogar.
+  - [ ] Testar se a tela de tutorial é gerada.
+  - [ ] Testar se a tela de tutorial informa o nível escolhido.
+  - [ ] Testar se a tela de tutorial informa as proporções do tabuleiro.
+  - [ ] Testar se a tela de tutorial informa a quantidade de bombas daquele nível.
+  - [ ] Testar se a tela de tutorial informa a quantidade de bandeiras daquele nível.
+  - [ ] Testar se a tela de tutorial informa como vencer o jogo.
+  - [ ] Testar se a tela de tutorial informa como se perde o jogo.
