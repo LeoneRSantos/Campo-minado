@@ -69,12 +69,12 @@ class TelaDoJogo:
         tutorial = Toplevel(self.root)
         tutorial.title("Como jogar")
         tutorial.geometry("500x300")
-        Label(tutorial,text=f'- Você escolheu o nível {d}').pack()
-        Label(tutorial,text=f'- Seu tabuleiro tem dimensões {self.colunas} x {self.linhas} e {self.bombas} bombas').pack()
-        Label(tutorial,text=f'- Você pode adicionar uma bandeira no local que imaginar ter uma bomba.').pack()
-        Label(tutorial,text=f'- Você tem um total de {self.bombas} bandeiras.').pack()
-        Label(tutorial,text=f'- Para vencer o jogo, você deve marcar todos os pontos que têm bomba \ncom bandeiras.').pack()
-        Label(tutorial,text=f'- Caso clique em um local com bomba, você perde.').pack()
+        Label(tutorial,text=f'- Você escolheu o nível {d}').pack(padx=8,pady=8,anchor="center")
+        Label(tutorial,text=f'- Seu tabuleiro tem dimensões {self.colunas} x {self.linhas} e {self.bombas} bombas').pack(padx=8,pady=8,anchor="center")
+        Label(tutorial,text=f'- Você pode adicionar uma bandeira no local que imaginar ter uma bomba.').pack(padx=8,pady=8,anchor="center")
+        Label(tutorial,text=f'- Você tem um total de {self.bombas} bandeiras.').pack(padx=8,pady=8,anchor="center")
+        Label(tutorial,text=f'- Para vencer o jogo, você deve marcar todos os pontos que têm bomba \ncom bandeiras.').pack(padx=8,pady=8,anchor="center")
+        Label(tutorial,text=f'- Caso clique em um local com bomba, você perde.').pack(padx=8,pady=8,anchor="center")
 
 
     def revelarBombas(self):
