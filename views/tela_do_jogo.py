@@ -53,6 +53,7 @@ class TelaDoJogo:
                 posy = coluna * self.tamanhoDaCasa
                 casa.place(x=posx, y=posy, width=self.tamanhoDaCasa,
                            height=self.tamanhoDaCasa)
+                casa['bg'] = '#E3E7F1'
                 linhas.append(casa)
             self.matrizDoJogo.append(linhas)
         
@@ -81,7 +82,8 @@ class TelaDoJogo:
         for linha in range(len(self.matrizDoJogo)):
             for coluna in range(len(self.matrizDoJogo[linha])):
                 if self.casasRandomicas[linha][coluna]:
-                    self.matrizDoJogo[linha][coluna]['text'] = "B"
+                    self.matrizDoJogo[linha][coluna]['text'] = "X"
+                    self.matrizDoJogo[linha][coluna]['bg'] = '#970C10'
 
     def adicionarBombas(self):
         self.casasRandomicas = [[False for _ in range(
@@ -123,13 +125,14 @@ class TelaDoJogo:
         if self.casasRandomicas[xX][yY] == False:
            vizinhos = self.calcularBombasAdjacentes(xX, yY) 
            casaEspecifica['text'] = str(vizinhos)
-           casaEspecifica['state'] = "disabled" 
+           casaEspecifica['fg'] = '#000C20'
+           casaEspecifica['bg'] = '#F0EDE0'
 
 
         minado = self.casasRandomicas[xX][yY]
         if (minado):
             self.perdeu = True
-            casaEspecifica['text'] = "B"
+            casaEspecifica['text'] = "X"
             self.revelarBombas()
             janelaPerdeu = Toplevel(self.root)
             janelaPerdeu.title("Você perdeu")
