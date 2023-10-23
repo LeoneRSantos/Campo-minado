@@ -113,15 +113,15 @@ class TelaDoJogo:
         for linhaAtual in range(len(self.matrizDoJogo)):
             for colunaAtual in range(len(self.matrizDoJogo[linhaAtual])):
                 if self.matrizDoJogo[linhaAtual][colunaAtual] == casaEspecifica:
-                    xX = colunaAtual
-                    yY = linhaAtual
+                    xX = linhaAtual
+                    yY = colunaAtual
         self.jogou = True
         # print(f'Casa verificada: {xX},{yY} \t tem bomba? {self.casasRandomicas[xX][yY]}')
         
         # casaEspecifica.bind("<Button-3>", self.adicionarBandeira)
 
         if self.casasRandomicas[xX][yY] == False:
-           vizinhos = self.calcularBombasAdjacentes(yY, xX) 
+           vizinhos = self.calcularBombasAdjacentes(xX, yY) 
            casaEspecifica['text'] = str(vizinhos)
            casaEspecifica['state'] = "disabled" 
 
