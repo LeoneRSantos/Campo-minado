@@ -61,12 +61,13 @@
 - [x] O número de bombas no tabuleiro deve ser fixo 10 bombas para fácil.
   - [x] Testar se o número de bombas do tabuleiro é maior que 10 
   - [x] Testar se o número de bombas do tabuleiro é menor que 10 
+  - [ ] Testar se o tabuleiro tem, exatamente, 10 bombas.
   - [x] Testar se o tabuleiro só contém bombas 
   - [x] Testar se o tabuleiro não contém bombas
   - [x] Testar se as bombas estão posicionadas em locais válidos
   - [x] Testar se existe alguma bomba no tabuleiro
   - [x] Testar se o número de bombas é negativo
-  - [x] Testar se as bombas são válidas (ex: no código precisa ser inteiro, passamos uma string para testar)
+  - [x] Testar se as bombas são válidas (precisa ser True)
   - [x] Testar se existem espaços suficientes para as bombas
   - [x] Testar se o tabuleiro é de tamanho vazio
 
@@ -77,12 +78,13 @@
 - [x] O número de bombas no tabuleiro deve ser fixo 30 bombas para intermediário.
   - [x] Testar se o número de bombas do tabuleiro é maior que 30
   - [x] Testar se o número de bombas do tabuleiro é menor que 30
+  - [ ] Testar se o tabuleiro tem, exatamente, 30 bombas.
   - [x] Testar se o tabuleiro só contém bombas 
   - [x] Testar se o tabuleiro não contém bombas
   - [x] Testar se as bombas estão posicionadas em locais válidos
   - [x] Testar se existe alguma bomba no tabuleiro
   - [x] Testar se o número de bombas é negativo
-  - [x] Testar se as bombas são válidas (ex: no código precisa ser inteiro, passamos uma string para testar)
+  - [x] Testar se as bombas são válidas (precisa ser True)
   - [x] Testar se existem espaços suficientes para as bombas
   - [x] Testar se o tabuleiro é de tamanho vazio
 
@@ -92,12 +94,13 @@
 - [x] O número de bombas no tabuleiro deve ser fixo 100 bombas para difícil.
   - [x] Testar se o número de bombas do tabuleiro é maior que 100
   - [x] Testar se o número de bombas do tabuleiro é menor que 100
+  - [ ] Testar se o tabuleiro tem, exatamente, 100 bombas.
   - [x] Testar se o tabuleiro só contém bombas 
   - [x] Testar se o tabuleiro não contém bombas
   - [x] Testar se as bombas estão posicionadas em locais válidos
   - [x] Testar se existe alguma bomba no tabuleiro
   - [x] Testar se o número de bombas é negativo
-  - [x] Testar se as bombas são válidas (ex: no código precisa ser inteiro, passamos uma string para testar)
+  - [x] Testar se as bombas são válidas (precisa ser True)
   - [x] Testar se existem espaços suficientes para as bombas
   - [x] Testar se o tabuleiro é de tamanho vazio
 
