@@ -9,6 +9,7 @@ class TelaDoJogo:
     informar = False
 
     def __init__(self, linhas, colunas, bombas, root):
+        self.jogoIniciado = False
         self.clique = False
         self.qtdBandeiras = 0
         self.perdeu = False
@@ -58,7 +59,6 @@ class TelaDoJogo:
             self.matrizDoJogo.append(linhas)
         
         d = ''
-        self.clique = True
 
         if self.linhas == 8:
             d = 'fácil'
@@ -66,6 +66,8 @@ class TelaDoJogo:
             d = 'Intermediário'
         elif self.linhas == 24:
             d = 'difícil'
+
+        self.jogoIniciado = True
 
         tutorial = Toplevel(self.root)
         tutorial.title("Como jogar")
@@ -153,6 +155,8 @@ class TelaDoJogo:
 
     def jogar(self):
         self.root.mainloop()
+        self.jogoIniciado = True
 
     def encerrarJogo(self):
         self.root.destroy()
+        self.jogoIniciado = False
