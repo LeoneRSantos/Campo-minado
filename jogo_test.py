@@ -14,8 +14,8 @@ def teste_nivel_ja_selecionado_facil():
     t = TelaDoJogo(8,8,10,tela)
     selecionado = False 
 
-    if t.clique == True:
-        selecionado = t.clique
+    if t.jogoIniciado == True:
+        selecionado = t.jogoIniciado
 
     assert selecionado == True
 
@@ -23,8 +23,8 @@ def teste_nivel_ja_selecionado_intermediario():
     t = TelaDoJogo(10,16,30,tela)
     selecionado = False 
 
-    if t.clique == True:
-        selecionado = t.clique
+    if t.jogoIniciado == True:
+        selecionado = t.jogoIniciado
 
     assert selecionado == True
 
@@ -32,8 +32,8 @@ def teste_nivel_ja_selecionado_dificil():
     t = TelaDoJogo(24,24,100,tela)
     selecionado = False 
 
-    if t.clique == True:
-        selecionado = t.clique
+    if t.jogoIniciado == True:
+        selecionado = t.jogoIniciado
 
     assert selecionado == True
 
