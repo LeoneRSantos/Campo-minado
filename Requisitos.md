@@ -26,7 +26,13 @@
 
 **3**
 - [x] O tabuleiro deve ser de dimensão 8x8 no nível fácil. 
-  - [x] Testar se o tabuleiro de "fácil" tem dimensão 8x8. 
+  - [x] Testar se o tabuleiro de "fácil" tem dimensão 8x8.
+  - [x] Testar se o tabuleiro tem, exatamente, 8 linhas.
+  - [x] Testar se o tabuleiro tem mais do que 8 linhas.
+  - [x] Testar se o tabuleiro tem menos do que 8 linhas.
+  - [x] Testar se o tabuleiro tem, exatamente, 8 colunas.
+  - [x] Testar se o tabuleiro tem mais do que 8 colunas.
+  - [x] Testar se o tabuleiro tem menos do que 8 colunas.
   - [x] Testar dimensões inválidas.
   - [x] Testar se o tabuleiro está vazio no início. 
   - [x] Testar se é possível marcar no tabuleiro. 
