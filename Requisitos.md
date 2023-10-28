@@ -61,6 +61,12 @@
 **5**
 - [x] O jogo deve ter um tabuleiro de jogo com dimensões 24x24 para difícil.
   - [x] Testar se o jogo em “Difícil” tem 24x24.
+  - [x] Testar se o tabuleiro tem, exatamente, 24 linhas.
+  - [x] Testar se o tabuleiro tem mais do que 24 linhas.
+  - [x] Testar se o tabuleiro tem menos do que 24 linhas.
+  - [x] Testar se o tabuleiro tem, exatamente, 24 colunas.
+  - [x] Testar se o tabuleiro tem mais do que 24 colunas.
+  - [x] Testar se o tabuleiro tem menos do que 24 colunas.
   - [x] Testar dimensões inválidas.
   - [x] Testar se o tabuleiro está vazio no início
   - [x] Testar se é possível marcar no tabuleiro.
