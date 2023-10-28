@@ -44,6 +44,12 @@
 **4**
 - [x] O jogo deve ter um tabuleiro de jogo com dimensões 10x16 para intermediário  
   - [x] Testar se o jogo em “Intermediário” tem 10x16.
+  - [x] Testar se o tabuleiro tem, exatamente, 10 linhas.
+  - [x] Testar se o tabuleiro tem mais do que 10 linhas.
+  - [x] Testar se o tabuleiro tem menos do que 10 linhas.
+  - [x] Testar se o tabuleiro tem, exatamente, 16 colunas.
+  - [x] Testar se o tabuleiro tem mais do que 16 colunas.
+  - [x] Testar se o tabuleiro tem menos do que 16 colunas.
   - [x] Testar dimensões inválidas.
   - [x] Testar se o tabuleiro está vazio no início.
   - [ ] Testar marcações inválidas.
