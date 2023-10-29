@@ -26,20 +26,20 @@ class TelaDoJogo:
         self.criarTabuleiro()
         self.adicionarBombas()
 
-    def adicionarBandeira(self,casa):
+    def adicionarBandeira(self, casa):
         self.clique = True
         self.qtdBandeiras += 1
 
         if self.qtdBandeiras > self.bombas:
-            self.qtdBandeiras = self.bombas 
+            self.qtdBandeiras = self.bombas
         casa['text'] = 'P'
 
-    def removerBandeira(self,casa):
+    def removerBandeira(self, casa):
         if casa['text'] == 'P':
             self.qtdBandeiras -= 1
 
             if self.qtdBandeiras > self.bombas:
-                self.qtdBandeiras = self.bombas 
+                self.qtdBandeiras = self.bombas
             casa['text'] = ''
 
     def criarTabuleiro(self):
@@ -57,7 +57,7 @@ class TelaDoJogo:
                 casa['bg'] = '#E3E7F1'
                 linhas.append(casa)
             self.matrizDoJogo.append(linhas)
-        
+
         d = ''
 
         if self.linhas == 8:
@@ -72,13 +72,18 @@ class TelaDoJogo:
         tutorial = Toplevel(self.root)
         tutorial.title("Como jogar")
         tutorial.geometry("500x300")
-        Label(tutorial,text=f'- Você escolheu o nível {d}').pack(padx=8,pady=8,anchor="center")
-        Label(tutorial,text=f'- Seu tabuleiro tem dimensões {self.colunas} x {self.linhas} e {self.bombas} bombas').pack(padx=8,pady=8,anchor="center")
-        Label(tutorial,text=f'- Você pode adicionar uma bandeira no local que imaginar ter uma bomba.').pack(padx=8,pady=8,anchor="center")
-        Label(tutorial,text=f'- Você tem um total de {self.bombas} bandeiras.').pack(padx=8,pady=8,anchor="center")
-        Label(tutorial,text=f'- Para vencer o jogo, você deve marcar todos os pontos que têm bomba \ncom bandeiras.').pack(padx=8,pady=8,anchor="center")
-        Label(tutorial,text=f'- Caso clique em um local com bomba, você perde.').pack(padx=8,pady=8,anchor="center")
-
+        Label(
+            tutorial, text=f'- Você escolheu o nível {d}').pack(padx=8, pady=8, anchor="center")
+        Label(tutorial, text=f'- Seu tabuleiro tem dimensões {self.colunas} x {self.linhas} e {self.bombas} bombas').pack(
+            padx=8, pady=8, anchor="center")
+        Label(tutorial, text=f'- Você pode adicionar uma bandeira no local que imaginar ter uma bomba.').pack(
+            padx=8, pady=8, anchor="center")
+        Label(tutorial, text=f'- Você tem um total de {self.bombas} bandeiras.').pack(
+            padx=8, pady=8, anchor="center")
+        Label(tutorial, text=f'- Para vencer o jogo, você deve marcar todos os pontos que têm bomba \ncom bandeiras.').pack(
+            padx=8, pady=8, anchor="center")
+        Label(tutorial, text=f'- Caso clique em um local com bomba, você perde.').pack(
+            padx=8, pady=8, anchor="center")
 
     def revelarBombas(self):
         for linha in range(len(self.matrizDoJogo)):
@@ -121,24 +126,23 @@ class TelaDoJogo:
                     yY = colunaAtual
         self.jogou = True
         # print(f'Casa verificada: {xX},{yY} \t tem bomba? {self.casasRandomicas[xX][yY]}')
-        
+
         # casaEspecifica.bind("<Button-3>", self.adicionarBandeira)
 
         if self.casasRandomicas[xX][yY] == False:
-           vizinhos = self.calcularBombasAdjacentes(xX, yY) 
-           casaEspecifica['text'] = str(vizinhos)
-           casaEspecifica['fg'] = '#000C20'
-           casaEspecifica['bg'] = '#F0EDE0'
+            vizinhos = self.calcularBombasAdjacentes(xX, yY)
+            casaEspecifica['text'] = str(vizinhos)
+            casaEspecifica['fg'] = '#000C20'
+            casaEspecifica['bg'] = '#F0EDE0'
 
-           if vizinhos == 0:
-                for l in range(-1,2):
-                    for c in range(-1,2):
+            if vizinhos == 0:
+                for l in range(-1, 2):
+                    for c in range(-1, 2):
                         if 0 <= xX + l < self.linhas and 0 <= yY + c < self.colunas:
-                            self.verificarCasa(self.matrizDoJogo[xX + l][yY + c])
+                            self.verificarCasa(
+                                self.matrizDoJogo[xX + l][yY + c])
                             self.matrizDoJogo[xX + l][yY + c]['fg'] = '#000C20'
                             self.matrizDoJogo[xX + l][yY + c]['bg'] = '#F0EDE0'
-
-                            
 
         minado = self.casasRandomicas[xX][yY]
         if (minado):
@@ -152,11 +156,11 @@ class TelaDoJogo:
             Label(janelaPerdeu, text="Infelizmente você encontrou uma bomba").pack()
             for linhaAtual in range(len(self.matrizDoJogo)):
                 for colunaAtual in range(len(self.matrizDoJogo[linhaAtual])):
-                    self.matrizDoJogo[linhaAtual][colunaAtual]['state'] = "disabled" 
+                    self.matrizDoJogo[linhaAtual][colunaAtual]['state'] = "disabled"
 
         if casaEspecifica['text'] == 'P':
             TelaDoJogo.informar = True
-            
+
             casaBandeira = Toplevel(self.tela)
             casaBandeira.title("Casa com bandeira")
             casaBandeira.geometry("300x200")
