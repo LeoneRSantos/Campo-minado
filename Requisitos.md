@@ -371,26 +371,26 @@
 <Br>
 
 **30**
-- [ ] Caso a casa verificada no nível fácil conter adjacência 0, as 8 casas adjacentes a ela devem ser descobertas.
-  - [ ] Testar se todas as 8 casas com adjacência a essa casa são descobertas.
-  - [ ] Testar se menos do que 8 casas adjacentes são descobertas.
-  - [ ] Testar se menos do que 8 casas adjacentes a ela são descobertas.
+- [x] Caso a casa verificada no nível fácil conter adjacência 0, as 8 casas adjacentes a ela devem ser descobertas.
+  - [x] Testar se todas as 8 casas com adjacência a essa casa são descobertas.
+  - [x] Testar se menos do que 8 casas adjacentes são descobertas.
+  - [x] Testar se menos do que 8 casas adjacentes a ela são descobertas.
 
 <Br>
 
 **31**
-- [ ] Caso a casa verificada no nível intermediário conter adjacência 0, as 8 casas adjacentes a ela devem ser descobertas.
-  - [ ] Testar se todas as 8 casas com adjacência a essa casa são descobertas.
-  - [ ] Testar se menos do que 8 casas adjacentes são descobertas.
-  - [ ] Testar se menos do que 8 casas adjacentes a ela são descobertas.
+- [x] Caso a casa verificada no nível intermediário conter adjacência 0, as 8 casas adjacentes a ela devem ser descobertas.
+  - [x] Testar se todas as 8 casas com adjacência a essa casa são descobertas.
+  - [x] Testar se menos do que 8 casas adjacentes são descobertas.
+  - [x] Testar se menos do que 8 casas adjacentes a ela são descobertas.
 
 <Br>
 
 **32**
-- [ ] Caso a casa verificada no nível difícil conter adjacência 0, as 8 casas adjacentes a ela devem ser descobertas.
-  - [ ] Testar se todas as 8 casas com adjacência a essa casa são descobertas.
-  - [ ] Testar se menos do que 8 casas adjacentes são descobertas.
-  - [ ] Testar se menos do que 8 casas adjacentes a ela são descobertas.
+- [x] Caso a casa verificada no nível difícil conter adjacência 0, as 8 casas adjacentes a ela devem ser descobertas.
+  - [x] Testar se todas as 8 casas com adjacência a essa casa são descobertas.
+  - [x] Testar se menos do que 8 casas adjacentes são descobertas.
+  - [x] Testar se menos do que 8 casas adjacentes a ela são descobertas.
 
 <Br>
 
