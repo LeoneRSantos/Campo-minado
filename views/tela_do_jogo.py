@@ -130,6 +130,15 @@ class TelaDoJogo:
            casaEspecifica['fg'] = '#000C20'
            casaEspecifica['bg'] = '#F0EDE0'
 
+           if vizinhos == 0:
+                for l in range(-1,2):
+                    for c in range(-1,2):
+                        if 0 <= xX + l < self.linhas and 0 <= yY + c < self.colunas:
+                            self.verificarCasa(self.matrizDoJogo[xX + l][yY + c])
+                            self.matrizDoJogo[xX + l][yY + c]['fg'] = '#000C20'
+                            self.matrizDoJogo[xX + l][yY + c]['bg'] = '#F0EDE0'
+
+                            
 
         minado = self.casasRandomicas[xX][yY]
         if (minado):
