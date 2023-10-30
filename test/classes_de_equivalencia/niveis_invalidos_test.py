@@ -1,17 +1,15 @@
 from tkinter import Tk
 import pytest
 from jogo.dificuldade import Dificuldade
-
-from views.tela_do_jogo import TelaDoJogo
 from views.tela_inicial import TelaInicial
 
 tela = Tk()
 
 
 @pytest.mark.parametrize("nivelInvalido, esperado", [
-    ('fac', 'fácil'), ('faciil', 'fácil'), ('FACIL', 'fácil'), ('ffacil', 'fácil'),
-    ('Facil', 'fácil'), ('Faacil', 'fácil'), ('Facíl', 'fácil'), ('Fail', 'fácil'),
-    ('facii', 'fácil'), ('faccil', 'fácil'),
+    ('fac124', 'fácil'), ('faciil', 'fácil'), ('FACIL', 'fácil'), ('ffacil', 'fácil'),
+    ('1234', 'fácil'), ('Faacil', 'fácil'), ('Fa...cíl', 'fácil'), ('Fail', 'fácil'),
+    ('faci3i', 'fácil'), ('fa#ccil', 'fácil'),
 ])
 
 def testar_nivel_invalido_facil(nivelInvalido, esperado):
@@ -28,9 +26,9 @@ def testar_nivel_invalido_facil(nivelInvalido, esperado):
 
 
 @pytest.mark.parametrize("nivelInvalido, esperado", [
-    ('int', 'intermediário'), ('intermedia', 'intermediário'), ('INTERMEDIARIO', 'intermediário'), ('médio', 'intermediário'),
-    ('intermediario', 'intermediário'), ('intermedio', 'intermediário'), ('Intermediario', 'intermediário'), ('INtermediario', 'intermediário'),
-    ('inTermediar', 'intermediário'), ('Intermediário', 'intermediário'),
+    ('int1', 'intermediário'), ('intermedia', 'intermediário'), ('INTERMED#IARIO', 'intermediário'), ('médio', 'intermediário'),
+    ('interm23.iario', 'intermediário'), ('int@ermedio', 'intermediário'), ('Intermediario', 'intermediário'), ('INtermediario', 'intermediário'),
+    ('inTermediar10', 'intermediário'), ('Inte23rmediário', 'intermediário'),
 ])
 
 def testar_nivel_invalido_intermediario(nivelInvalido, esperado):
@@ -47,9 +45,9 @@ def testar_nivel_invalido_intermediario(nivelInvalido, esperado):
 
 
 @pytest.mark.parametrize("nivelInvalido, esperado", [
-    ('dif', 'difícil'), ('diifil', 'difícil'), ('DIFICIL', 'difícil'), ('Dificil', 'difícil'),
-    ('Difiicil', 'difícil'), ('dificill', 'difícil'), ('díficil', 'difícil'), ('Difficil', 'difícil'),
-    ('Dificil', 'difícil'), ('Dific', 'difícil'),
+    ('dif@', 'difícil'), ('diifil', 'difícil'), ('DIFICIL', 'difícil'), ('Dificil', 'difícil'),
+    ('Difii$cil', 'difícil'), ('dif21icill', 'difícil'), ('díficil', 'difícil'), ('Difficil', 'difícil'),
+    ('Dif#5icil', 'difícil'), ('Di;.fic', 'difícil'),
 ])
 
 def testar_nivel_invalido_dificil(nivelInvalido, esperado):
