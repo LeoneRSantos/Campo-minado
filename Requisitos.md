@@ -11,7 +11,7 @@
   - [x] Testar se o nível já começa selecionado no nível intermediário.
   - [x] Testar se o nível já começa selecionado no nível difícil.
   - [x] Testar entradas inválidas de nível.
-  - [ ] Testar entradas válidas de nível.
+  - [x] Testar entradas válidas de nível.
 
 <Br>
 
@@ -51,7 +51,7 @@
   - [x] Testar se o tabuleiro tem menos do que 16 colunas.
   - [x] Testar dimensões inválidas.
   - [x] Testar se o tabuleiro está vazio no início.
-  - [ ] Testar marcações inválidas.
+  - [x] Testar marcações inválidas.
   - [x] Testar se é possível marcar no tabuleiro.
   - [x] Testar se a posição de jogada está dentro do tabuleiro
 
@@ -69,7 +69,7 @@
   - [x] Testar dimensões inválidas.
   - [x] Testar se o tabuleiro está vazio no início
   - [x] Testar se é possível marcar no tabuleiro.
-  - [ ] Testar marcações inválidas.
+  - [x] Testar marcações inválidas.
   - [x] Testar se a posição de jogada está dentro do tabuleiro 
 
 <Br>
