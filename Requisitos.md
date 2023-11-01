@@ -271,17 +271,17 @@
 ## Requisitos da interface
 
 **22**
-- [ ] Deve ser possível começar com uma tela de escolha de nível de dificuldade.
-  - [ ] Testar se a tela mostra todos os níveis que se pode escolher.
-  - [ ] Testar se a tela de escolha de nível de dificuldade é criada.
-  - [ ] Testar se é possível escolher o nível fácil a partir da tela.
-  - [ ] Testar se é possível escolher o nível intermediário a partir da tela.
-  - [ ] Testar se é possível escolher o nível difícil a partir da tela.
+- [x] Deve ser possível começar com uma tela de escolha de nível de dificuldade.
+  - [x] Testar se a tela mostra todos os níveis que se pode escolher.
+  - [x] Testar se a tela de escolha de nível de dificuldade é criada.
+  - [x] Testar se é possível escolher o nível fácil a partir da tela.
+  - [x] Testar se é possível escolher o nível intermediário a partir da tela.
+  - [x] Testar se é possível escolher o nível difícil a partir da tela.
 
 <Br>
 
 **23**
-- [ ] Após a escolha do nível fácil, deve-se gerar a tela do tabuleiro fácil.
+- [x] Após a escolha do nível fácil, deve-se gerar a tela do tabuleiro fácil.
   - [ ] Testar se a tela do tabuleiro fácil é gerada.
   - [ ] Testar se ela tem a proporção de 8x8 casas.
   - [ ] Testar se o tabuleiro inicia vazio.
