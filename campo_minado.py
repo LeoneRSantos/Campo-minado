@@ -5,6 +5,7 @@ from views.tela_inicial import TelaInicial
 def main():
     tela = Tk()
     t = TelaInicial(tela) 
+    t.iniciarJogo()
    
 
 if __name__ == '__main__':
