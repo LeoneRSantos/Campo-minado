@@ -10,27 +10,30 @@ tela = Tk()
 def teste_nivel_a_Escolher():
     assert Dificuldade.nivel == ''
 
+
 def teste_nivel_ja_selecionado_facil():
-    t = TelaDoJogo(8,8,10,tela)
-    selecionado = False 
+    t = TelaDoJogo(8, 8, 10, tela)
+    selecionado = False
 
     if t.jogoIniciado == True:
         selecionado = t.jogoIniciado
 
     assert selecionado == True
+
 
 def teste_nivel_ja_selecionado_intermediario():
-    t = TelaDoJogo(10,16,30,tela)
-    selecionado = False 
+    t = TelaDoJogo(10, 16, 30, tela)
+    selecionado = False
 
     if t.jogoIniciado == True:
         selecionado = t.jogoIniciado
 
     assert selecionado == True
 
+
 def teste_nivel_ja_selecionado_dificil():
-    t = TelaDoJogo(24,24,100,tela)
-    selecionado = False 
+    t = TelaDoJogo(24, 24, 100, tela)
+    selecionado = False
 
     if t.jogoIniciado == True:
         selecionado = t.jogoIniciado
@@ -56,40 +59,40 @@ def teste_Escolher_Nivel_dificil():
     assert d.escolherNivel() == d.nivel
 
 
-def testar_Se_Comeca_Com_Menu():
-    TelaInicial.indicarComeco()
-
-    assert TelaInicial.comecar == True
-
-
 def teste_Escolher_Facil_Pelo_Clique():
-    c = TelaInicial.comecar
-    TelaInicial.indicarComeco()
+    ti = TelaInicial(tela)
 
-    TelaInicial.dificuldade = 'fácil'
-    d = Dificuldade(TelaInicial.dificuldade)
+    ti.indicarComeco()
 
-    assert d.escolherNivel() == TelaInicial.retornarDificuldade() and c == True
+    ti.dificuldade = 'fácil'
+
+    d = Dificuldade(ti.dificuldade)
+
+    assert d.escolherNivel() == ti.retornarDificuldade() and ti.comeco == True
 
 
 def teste_Escolher_Intermediario_Pelo_Clique():
-    TelaInicial.indicarComeco()
+    ti = TelaInicial(tela)
 
-    TelaInicial.dificuldade = 'fácil'
-    d = Dificuldade(TelaInicial.dificuldade)
+    ti.indicarComeco()
 
-    assert d.escolherNivel() == TelaInicial.retornarDificuldade(
-    ) and TelaInicial.comecar == True
+    ti.dificuldade = 'intermediário'
+
+    d = Dificuldade(ti.dificuldade)
+
+    assert d.escolherNivel() == ti.retornarDificuldade() and ti.comeco == True
 
 
 def teste_Escolher_Dificil_Pelo_Clique():
-    TelaInicial.indicarComeco()
-    TelaInicial.dificuldade = 'difícil'
+    ti = TelaInicial(tela)
 
-    d = Dificuldade(TelaInicial.dificuldade)
+    ti.indicarComeco()
 
-    assert d.escolherNivel() == TelaInicial.retornarDificuldade(
-    ) and TelaInicial.comecar == False
+    ti.dificuldade = 'difícil'
+
+    d = Dificuldade(ti.dificuldade)
+
+    assert d.escolherNivel() == ti.retornarDificuldade() and ti.comeco == True
 
 
 def testar_Dimensoes_Do_Facil():
