@@ -56,6 +56,7 @@ class TelaDoJogo:
                 casa.place(x=posx, y=posy, width=self.tamanhoDaCasa,
                            height=self.tamanhoDaCasa)
                 casa['bg'] = '#E3E7F1'
+                casa.bind('<Button-3>', lambda Event, x=linha, y=coluna: self.adicionarBandeira(x,y))
                 linhas.append(casa)
             self.matrizDoJogo.append(linhas)
 
