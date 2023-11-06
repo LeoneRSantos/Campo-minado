@@ -70,7 +70,7 @@ def testar_se_e_possivel_verificar_casa_com_bomba_facil():
 
     for l in range(tf.linhas):
         for c in range(tf.colunas):
-            if tf.casasRandomicas[l][c]==True:
+            if tf.casasRandomicas[l][c] == True:
                 try:
                     tf.verificarCasa(tf.matrizDoJogo[l][c])
                 except RecursionError:
@@ -81,13 +81,14 @@ def testar_se_e_possivel_verificar_casa_com_bomba_facil():
 
     assert possivelVerificar == True
 
+
 def testar_se_e_possivel_verificar_casa_com_bomba_intermediario():
     ti = TelaDoJogo(10, 16, 30, tela)
     possivelVerificar = False
 
     for l in range(ti.linhas):
         for c in range(ti.colunas):
-            if ti.casasRandomicas[l][c]==True:
+            if ti.casasRandomicas[l][c] == True:
                 try:
                     ti.verificarCasa(ti.matrizDoJogo[l][c])
                 except RecursionError:
@@ -98,19 +99,60 @@ def testar_se_e_possivel_verificar_casa_com_bomba_intermediario():
 
     assert possivelVerificar == True
 
+
 def testar_se_e_possivel_verificar_casa_com_bomba_dificil():
     td = TelaDoJogo(24, 24, 30, tela)
     possivelVerificar = False
 
     for l in range(td.linhas):
         for c in range(td.colunas):
-            if td.casasRandomicas[l][c]==True:
+            if td.casasRandomicas[l][c] == True:
                 try:
                     td.verificarCasa(td.matrizDoJogo[l][c])
-                except RecursionError:
-                    possivelVerificar = False
+                except: RecursionError
 
                 if td.matrizDoJogo[l][c]['text'] == 'X':
                     possivelVerificar = True
 
     assert possivelVerificar == True
+
+
+def testar_se_as_bombas_sao_mostradas_com_destaque_facil():
+    tf = TelaDoJogo(8, 8, 10, tela)
+
+    cor1 = ''
+    cor2 = ''
+
+    for l in range(tf.linhas):
+        for c in range(tf.colunas):
+            if tf.casasRandomicas[l][c] == True:
+                try:
+                    tf.verificarCasa(tf.matrizDoJogo[l][c])
+                except:
+                    RecursionError
+                cor1 = tf.matrizDoJogo[l][c]['bg']
+
+            else:
+                cor2 = tf.matrizDoJogo[l][c]['bg']
+
+    assert cor1 != cor2
+
+
+def testar_se_as_bombas_sao_mostradas_com_destaque_intermediario():
+    ti = TelaDoJogo(10, 16, 30, tela)
+
+    cor1 = ''
+    cor2 = ''
+
+    for l in range(ti.linhas):
+        for c in range(ti.colunas):
+            if ti.casasRandomicas[l][c] == True:
+                try:
+                    ti.verificarCasa(ti.matrizDoJogo[l][c])
+                except:
+                    RecursionError
+                cor1 = ti.matrizDoJogo[l][c]['bg']
+            else:
+                cor2 = ti.matrizDoJogo[l][c]['bg']
+
+    assert cor1 != cor2
