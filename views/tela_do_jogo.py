@@ -7,6 +7,7 @@ class TelaDoJogo:
     # Tamanho padrão de casas
     tamanhoDaCasa = 28
     informar = False
+    d = ''
 
     def __init__(self, linhas, colunas, bombas, root):
         self.jogoIniciado = False
@@ -58,14 +59,13 @@ class TelaDoJogo:
                 linhas.append(casa)
             self.matrizDoJogo.append(linhas)
 
-        d = ''
 
         if self.linhas == 8:
-            d = 'fácil'
+            TelaDoJogo.d= 'fácil'
         elif self.linhas == 16:
-            d = 'Intermediário'
+            TelaDoJogo.d= 'intermediário'
         elif self.linhas == 24:
-            d = 'difícil'
+            TelaDoJogo.d = 'difícil'
 
         self.jogoIniciado = True
 
@@ -73,7 +73,7 @@ class TelaDoJogo:
         tutorial.title("Como jogar")
         tutorial.geometry("500x300")
         Label(
-            tutorial, text=f'- Você escolheu o nível {d}').pack(padx=8, pady=8, anchor="center")
+            tutorial, text=f'- Você escolheu o nível {TelaDoJogo.d}').pack(padx=8, pady=8, anchor="center")
         Label(tutorial, text=f'- Seu tabuleiro tem dimensões {self.colunas} x {self.linhas} e {self.bombas} bombas').pack(
             padx=8, pady=8, anchor="center")
         Label(tutorial, text=f'- Você pode adicionar uma bandeira no local que imaginar ter uma bomba.').pack(
@@ -127,7 +127,7 @@ class TelaDoJogo:
         self.jogou = True
         # print(f'Casa verificada: {xX},{yY} \t tem bomba? {self.casasRandomicas[xX][yY]}')
 
-        # casaEspecifica.bind("<Button-3>", self.adicionarBandeira)
+        # casaEspecifica.bind("<Button-3>", lambda event, x=xX, y=yY: self.adicionarBandeira(event, x,y))
 
         if self.casasRandomicas[xX][yY] == False:
             vizinhos = self.calcularBombasAdjacentes(xX, yY)
@@ -169,6 +169,8 @@ class TelaDoJogo:
     def jogar(self):
         self.root.mainloop()
         self.jogoIniciado = True
+
+        return bool(self.jogoIniciado)
 
     def encerrarJogo(self):
         self.root.destroy()
