@@ -282,91 +282,92 @@
 
 **23**
 - [x] Após a escolha do nível fácil, deve-se gerar a tela do tabuleiro fácil.
-  - [ ] Testar se a tela do tabuleiro fácil é gerada.
-  - [ ] Testar se ela tem a proporção de 8x8 casas.
-  - [ ] Testar se o tabuleiro inicia vazio.
-  - [ ] Testar se é possível marcar dentro do tabuleiro. 
-  - [ ] Testar se é possível descobrir uma bomba ou o número de bombas adjacentes ao se descobrir uma casa do tabuleiro.
+  - [x] Testar se a tela do tabuleiro fácil é gerada.
+  - [x] Testar se ela tem a proporção de 8x8 casas.
+  - [x] Testar se o tabuleiro inicia vazio.
+  - [x] Testar se é possível marcar dentro do tabuleiro. 
+  - [x] Testar se é possível descobrir uma bomba ou o número de bombas adjacentes ao se descobrir uma casa do tabuleiro.
   - [ ] Testar se é possível adicionar uma bandeira em uma casa.
   - [ ] Testar se é possível remover uma bandeira de uma casa.
-  - [ ] Testar se a casa fica desativada ao ser descoberta e encontrar um número que indique adjacência de bombas.
-  - [ ] Testar se todas as casas do tabuleiro ficam desativadas após encontrar uma boba.
-  - [ ] Testar se todas as bombas do tabuleiro são mostradas ao se descobrir uma bomba.
+  - [x] Testar se a casa fica desativada ao ser descoberta e encontrar um número que indique adjacência de bombas.
+  - [x] Testar se todas as casas do tabuleiro ficam desativadas após encontrar uma boba.
+  - [x] Testar se todas as bombas do tabuleiro são mostradas ao se descobrir uma bomba.
 
 <Br>
 
 **24**
-- [ ] Após a escolha do nível intermediário, deve-se gerar a tela do tabuleiro intermediário.
-  - [ ] Testar se a tela do tabuleiro intermediário é gerada.
-  - [ ] Testar se ela tem a proporção de 10x16 casas.
-  - [ ] Testar se o tabuleiro inicia vazio.
-  - [ ] Testar se é possível marcar dentro do tabuleiro. 
-  - [ ] Testar se é possível descobrir uma bomba ou o número de bombas adjacentes ao se descobrir uma casa do tabuleiro.
+- [x] Após a escolha do nível intermediário, deve-se gerar a tela do tabuleiro intermediário.
+  - [x] Testar se a tela do tabuleiro intermediário é gerada.
+  - [x] Testar se ela tem a proporção de 10x16 casas.
+  - [x] Testar se o tabuleiro inicia vazio.
+  - [x] Testar se é possível marcar dentro do tabuleiro. 
+  - [x] Testar se é possível descobrir uma bomba ou o número de bombas adjacentes ao se descobrir uma casa do tabuleiro.
   - [ ] Testar se é possível adicionar uma bandeira em uma casa.
   - [ ] Testar se é possível remover uma bandeira de uma casa.
-  - [ ] Testar se a casa fica desativada ao ser descoberta e encontrar um número que indique adjacência de bombas.
-  - [ ] Testar se todas as casas do tabuleiro ficam desativadas após encontrar uma boba.
-  - [ ] Testar se todas as bombas do tabuleiro são mostradas ao se descobrir uma bomba.
+  - [x] Testar se a casa fica desativada ao ser descoberta e encontrar um número que indique adjacência de bombas.
+  - [x] Testar se todas as casas do tabuleiro ficam desativadas após encontrar uma boba.
+  - [x] Testar se todas as bombas do tabuleiro são mostradas ao se descobrir uma bomba.
 
 <Br>
 
 **25**
-- [ ] Após a escolha do nível difícil, deve-se gerar a tela do tabuleiro difícil.
-  - [ ] Testar se a tela do tabuleiro difícil é gerada.
-  - [ ] Testar se ela tem a proporção de 24x24 casas.
-  - [ ] Testar se o tabuleiro inicia vazio.
-  - [ ] Testar se é possível marcar dentro do tabuleiro. 
-  - [ ] Testar se é possível descobrir uma bomba ou o número de bombas adjacentes ao se descobrir uma casa do tabuleiro.
+- [x] Após a escolha do nível difícil, deve-se gerar a tela do tabuleiro difícil.
+  - [x] Testar se a tela do tabuleiro difícil é gerada.
+  - [x] Testar se ela tem a proporção de 24x24 casas.
+  - [x] Testar se o tabuleiro inicia vazio.
+  - [x] Testar se é possível marcar dentro do tabuleiro. 
+  - [x] Testar se é possível descobrir uma bomba ou o número de bombas adjacentes ao se descobrir uma casa do tabuleiro.
   - [ ] Testar se é possível adicionar uma bandeira em uma casa.
   - [ ] Testar se é possível remover uma bandeira de uma casa.
-  - [ ] Testar se a casa fica desativada ao ser descoberta e encontrar um número que indique adjacência de bombas.
-  - [ ] Testar se todas as casas do tabuleiro ficam desativadas após encontrar uma boba.
-  - [ ] Testar se todas as bombas do tabuleiro são mostradas ao se descobrir uma bomba.
+  - [x] Testar se a casa fica desativada ao ser descoberta e encontrar um número que indique adjacência de bombas.
+  - [x] Testar se todas as casas do tabuleiro ficam desativadas após encontrar uma boba.
+  - [x] Testar se todas as bombas do tabuleiro são mostradas ao se descobrir uma bomba.
 
 <Br>
 
 **26**
-- [ ] Após escolher o nível de dificuldade, deve-se gerar, também, uma tela de tutorial que mostra informações sobre o nível escolhido e como jogar.
-  - [ ] Testar se a tela de tutorial é gerada.
-  - [ ] Testar se a tela de tutorial informa o nível escolhido.
-  - [ ] Testar se a tela de tutorial informa as proporções do tabuleiro.
-  - [ ] Testar se a tela de tutorial informa a quantidade de bombas daquele nível.
-  - [ ] Testar se a tela de tutorial informa a quantidade de bandeiras daquele nível.
-  - [ ] Testar se a tela de tutorial informa como vencer o jogo.
-  - [ ] Testar se a tela de tutorial informa como se perde o jogo.
+- [x] Após escolher o nível de dificuldade, deve-se gerar, também, uma tela de tutorial que mostra informações sobre o nível escolhido e como jogar.
+  - [x] Testar se a tela de tutorial é gerada.
+  - [x] Testar se a tela de tutorial informa o nível escolhido.
+  - [x] Testar se a tela de tutorial informa as proporções do tabuleiro.
+  - [x] Testar se a tela de tutorial informa a quantidade de bombas daquele nível.
+  - [x] Testar se a tela de tutorial informa a quantidade de bandeiras daquele nível.
+  - [x] Testar se a tela de tutorial informa como vencer o jogo.
+  - [x] Testar se a tela de tutorial informa como se perde o jogo.
+  - [x] Testar se a tela de tutorial informa a quantidade de bandeiras disponível.
 
 <Br>
 
 **27**
-- [ ] Após a geração do tabuleiro no nível fácil, o clique em cada uma das casas deve revelar a casa.
-  - [ ] Testar se é possível verificar uma casa através do clique.
-  - [ ] Testar se a casa revela um número que indica adjecência.
-  - [ ] Testar se a casa revela uma bomba.
-  - [ ] Testar se a casa, após revelada, ainda pode ser verificada.
+- [x] Após a geração do tabuleiro no nível fácil, o clique em cada uma das casas deve revelar a casa.
+  - [x] Testar se é possível verificar uma casa através do clique.
+  - [x] Testar se a casa revela um número que indica adjecência.
+  - [x] Testar se a casa revela uma bomba.
+  - [x] Testar se a casa, após revelada, ainda pode ser verificada.
   - [ ] Testar se é possível adicionar uma bandeira numa casa já verificada.
-  - [ ] Testar se, após a verificação, as outras casa são afetadas.
+  - [x] Testar se, após a verificação, as outras casa são afetadas.
 
 <Br>
 
 **28**
-- [ ] Após a geração do tabuleiro no nível intermediário, o clique em cada uma das casas deve revelar a casa.
-  - [ ] Testar se é possível verificar uma casa através do clique.
-  - [ ] Testar se a casa revela um número que indica adjecência.
-  - [ ] Testar se a casa revela uma bomba.
-  - [ ] Testar se a casa, após revelada, ainda pode ser verificada.
+- [x] Após a geração do tabuleiro no nível intermediário, o clique em cada uma das casas deve revelar a casa.
+  - [x] Testar se é possível verificar uma casa através do clique.
+  - [x] Testar se a casa revela um número que indica adjecência.
+  - [x] Testar se a casa revela uma bomba.
+  - [x] Testar se a casa, após revelada, ainda pode ser verificada.
   - [ ] Testar se é possível adicionar uma bandeira numa casa já verificada.
-  - [ ] Testar se, após a verificação, as outras casas são afetadas.
+  - [x] Testar se, após a verificação, as outras casas são afetadas.
 
 <Br>
 
 **29**
-- [ ] Após a geração do tabuleiro no nível difícil, o clique em cada uma das casas deve revelar a casa.
-  - [ ] Testar se é possível verificar uma casa através do clique.
-  - [ ] Testar se a casa revela um número que indica adjecência.
-  - [ ] Testar se a casa revela uma bomba.
-  - [ ] Testar se a casa, após revelada, ainda pode ser verificada.
+- [x] Após a geração do tabuleiro no nível difícil, o clique em cada uma das casas deve revelar a casa.
+  - [x] Testar se é possível verificar uma casa através do clique.
+  - [x] Testar se a casa revela um número que indica adjecência.
+  - [x] Testar se a casa revela uma bomba.
+  - [x] Testar se a casa, após revelada, ainda pode ser verificada.
   - [ ] Testar se é possível adicionar uma bandeira numa casa já verificada.
-  - [ ] Testar se, após a verificação, as outras casas são afetadas.
+  - [x] Testar se, após a verificação, as outras casas são afetadas.
 
 <Br>
 
@@ -395,27 +396,27 @@
 <Br>
 
 **33**
-- [ ] Caso a casa verificada no tabuleiro fácil conter uma bomba, todas as casas que contém bombas devem ser reveladas.
-  - [ ] Testar se é possível verificar uma casa que contém bomba.
-  - [ ] Testar se, após encontrar uma bomba, as demais casas com bombas são mostradas.
+- [x] Caso a casa verificada no tabuleiro fácil conter uma bomba, todas as casas que contém bombas devem ser reveladas.
+  - [x] Testar se é possível verificar uma casa que contém bomba.
+  - [x] Testar se, após encontrar uma bomba, as demais casas com bombas são mostradas.
   - [ ] Testar se as demais casas já verificadas que não contém bombas não sofrem alteração.
   - [ ] Testar se as casas com bombas são reveladas com destaque suficiente.
 
 <Br>
 
 **34**
-- [ ] Caso a casa verificada no tabuleiro intermediário conter uma bomba, todas as casas que contém bombas devem ser reveladas.
-  - [ ] Testar se é possível verificar uma casa que contém bomba.
-  - [ ] Testar se, após encontrar uma bomba, as demais casas com bombas são mostradas.
+- [x] Caso a casa verificada no tabuleiro intermediário conter uma bomba, todas as casas que contém bombas devem ser reveladas.
+  - [x] Testar se é possível verificar uma casa que contém bomba.
+  - [x] Testar se, após encontrar uma bomba, as demais casas com bombas são mostradas.
   - [ ] Testar se as demais casas já verificadas que não contém bombas não sofrem alteração.
   - [ ] Testar se as casas com bombas são reveladas com destaque suficiente.
 
 <Br>
 
 **35**
-- [ ] Caso a casa verificada no tabuleiro difícil conter uma bomba, todas as casas que contém bombas devem ser reveladas.
-  - [ ] Testar se é possível verificar uma casa que contém bomba.
-  - [ ] Testar se, após encontrar uma bomba, as demais casas com bombas são mostradas.
+- [x] Caso a casa verificada no tabuleiro difícil conter uma bomba, todas as casas que contém bombas devem ser reveladas.
+  - [x] Testar se é possível verificar uma casa que contém bomba.
+  - [x] Testar se, após encontrar uma bomba, as demais casas com bombas são mostradas.
   - [ ] Testar se as demais casas já verificadas que não contém bombas não sofrem alteração.
   - [ ] Testar se as casas com bombas são reveladas com destaque suficiente.
 
