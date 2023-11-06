@@ -27,13 +27,14 @@ class TelaDoJogo:
         self.criarTabuleiro()
         self.adicionarBombas()
 
-    def adicionarBandeira(self, casa):
-        self.clique = True
-        self.qtdBandeiras += 1
+    def adicionarBandeira(self, x, y):
+        # self.clique = True
+        # self.qtdBandeiras += 1
 
-        if self.qtdBandeiras > self.bombas:
-            self.qtdBandeiras = self.bombas
-        casa['text'] = 'P'
+        # if self.qtdBandeiras > self.bombas:
+        #     self.qtdBandeiras = self.bombas
+        self.matrizDoJogo[x][y]['text'] = 'P'
+        print(f'Adicionar bandeira')
 
     def removerBandeira(self, casa):
         if casa['text'] == 'P':
