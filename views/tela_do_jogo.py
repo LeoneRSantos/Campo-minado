@@ -128,8 +128,7 @@ class TelaDoJogo:
                     yY = colunaAtual
         self.jogou = True
         # print(f'Casa verificada: {xX},{yY} \t tem bomba? {self.casasRandomicas[xX][yY]}')
-
-        # casaEspecifica.bind("<Button-3>", lambda event, x=xX, y=yY: self.adicionarBandeira(event, x,y))
+        # self.matrizDoJogo[xX][yY].bind('<Double-Button-1>', self.adicionarBandeira())
 
         if self.casasRandomicas[xX][yY] == False:
             vizinhos = self.calcularBombasAdjacentes(xX, yY)
