@@ -287,8 +287,8 @@
   - [x] Testar se o tabuleiro inicia vazio.
   - [x] Testar se é possível marcar dentro do tabuleiro. 
   - [x] Testar se é possível descobrir uma bomba ou o número de bombas adjacentes ao se descobrir uma casa do tabuleiro.
-  - [ ] Testar se é possível adicionar uma bandeira em uma casa.
-  - [ ] Testar se é possível remover uma bandeira de uma casa.
+  - [x] Testar se é possível adicionar uma bandeira em uma casa.
+  - [x] Testar se é possível remover uma bandeira de uma casa.
   - [x] Testar se a casa fica desativada ao ser descoberta e encontrar um número que indique adjacência de bombas.
   - [x] Testar se todas as casas do tabuleiro ficam desativadas após encontrar uma boba.
   - [x] Testar se todas as bombas do tabuleiro são mostradas ao se descobrir uma bomba.
@@ -302,8 +302,8 @@
   - [x] Testar se o tabuleiro inicia vazio.
   - [x] Testar se é possível marcar dentro do tabuleiro. 
   - [x] Testar se é possível descobrir uma bomba ou o número de bombas adjacentes ao se descobrir uma casa do tabuleiro.
-  - [ ] Testar se é possível adicionar uma bandeira em uma casa.
-  - [ ] Testar se é possível remover uma bandeira de uma casa.
+  - [x] Testar se é possível adicionar uma bandeira em uma casa.
+  - [x] Testar se é possível remover uma bandeira de uma casa.
   - [x] Testar se a casa fica desativada ao ser descoberta e encontrar um número que indique adjacência de bombas.
   - [x] Testar se todas as casas do tabuleiro ficam desativadas após encontrar uma boba.
   - [x] Testar se todas as bombas do tabuleiro são mostradas ao se descobrir uma bomba.
@@ -317,8 +317,8 @@
   - [x] Testar se o tabuleiro inicia vazio.
   - [x] Testar se é possível marcar dentro do tabuleiro. 
   - [x] Testar se é possível descobrir uma bomba ou o número de bombas adjacentes ao se descobrir uma casa do tabuleiro.
-  - [ ] Testar se é possível adicionar uma bandeira em uma casa.
-  - [ ] Testar se é possível remover uma bandeira de uma casa.
+  - [x] Testar se é possível adicionar uma bandeira em uma casa.
+  - [x] Testar se é possível remover uma bandeira de uma casa.
   - [x] Testar se a casa fica desativada ao ser descoberta e encontrar um número que indique adjacência de bombas.
   - [x] Testar se todas as casas do tabuleiro ficam desativadas após encontrar uma boba.
   - [x] Testar se todas as bombas do tabuleiro são mostradas ao se descobrir uma bomba.
@@ -344,7 +344,7 @@
   - [x] Testar se a casa revela um número que indica adjecência.
   - [x] Testar se a casa revela uma bomba.
   - [x] Testar se a casa, após revelada, ainda pode ser verificada.
-  - [ ] Testar se é possível adicionar uma bandeira numa casa já verificada.
+  - [x] Testar se é possível adicionar uma bandeira numa casa já verificada.
   - [x] Testar se, após a verificação, as outras casa são afetadas.
 
 <Br>
@@ -355,7 +355,7 @@
   - [x] Testar se a casa revela um número que indica adjecência.
   - [x] Testar se a casa revela uma bomba.
   - [x] Testar se a casa, após revelada, ainda pode ser verificada.
-  - [ ] Testar se é possível adicionar uma bandeira numa casa já verificada.
+  - [x] Testar se é possível adicionar uma bandeira numa casa já verificada.
   - [x] Testar se, após a verificação, as outras casas são afetadas.
 
 <Br>
@@ -366,7 +366,7 @@
   - [x] Testar se a casa revela um número que indica adjecência.
   - [x] Testar se a casa revela uma bomba.
   - [x] Testar se a casa, após revelada, ainda pode ser verificada.
-  - [ ] Testar se é possível adicionar uma bandeira numa casa já verificada.
+  - [x] Testar se é possível adicionar uma bandeira numa casa já verificada.
   - [x] Testar se, após a verificação, as outras casas são afetadas.
 
 <Br>
@@ -399,8 +399,8 @@
 - [x] Caso a casa verificada no tabuleiro fácil conter uma bomba, todas as casas que contém bombas devem ser reveladas.
   - [x] Testar se é possível verificar uma casa que contém bomba.
   - [x] Testar se, após encontrar uma bomba, as demais casas com bombas são mostradas.
-  - [ ] Testar se as demais casas já verificadas que não contém bombas não sofrem alteração.
-  - [ ] Testar se as casas com bombas são reveladas com destaque suficiente.
+  - [x] Testar se as demais casas já verificadas que não contém bombas não sofrem alteração.
+  - [x] Testar se as casas com bombas são reveladas com destaque suficiente.
 
 <Br>
 
@@ -408,8 +408,8 @@
 - [x] Caso a casa verificada no tabuleiro intermediário conter uma bomba, todas as casas que contém bombas devem ser reveladas.
   - [x] Testar se é possível verificar uma casa que contém bomba.
   - [x] Testar se, após encontrar uma bomba, as demais casas com bombas são mostradas.
-  - [ ] Testar se as demais casas já verificadas que não contém bombas não sofrem alteração.
-  - [ ] Testar se as casas com bombas são reveladas com destaque suficiente.
+  - [x] Testar se as demais casas já verificadas que não contém bombas não sofrem alteração.
+  - [x] Testar se as casas com bombas são reveladas com destaque suficiente.
 
 <Br>
 
@@ -417,44 +417,44 @@
 - [x] Caso a casa verificada no tabuleiro difícil conter uma bomba, todas as casas que contém bombas devem ser reveladas.
   - [x] Testar se é possível verificar uma casa que contém bomba.
   - [x] Testar se, após encontrar uma bomba, as demais casas com bombas são mostradas.
-  - [ ] Testar se as demais casas já verificadas que não contém bombas não sofrem alteração.
-  - [ ] Testar se as casas com bombas são reveladas com destaque suficiente.
+  - [x] Testar se as demais casas já verificadas que não contém bombas não sofrem alteração.
+  - [x] Testar se as casas com bombas são reveladas com destaque suficiente.
 
 <Br>
 
 **36** 
-- [ ] Caso a casa verificada no nível fácil conter uma bomba, uma mensagem de derrota deve ser exibida.
-  - [ ] Testar se a mensagem de derrota é criada.
-  - [ ] Verificar se ela informa que o jogador perdeu por encontrar uma bomba.
-  - [ ] Testar se ela se sobrepõe a tela anterior.
-  - [ ] Testar se ela é criada separadamente.
-  - [ ] Testar se, ao criar a nova tela, a tela anterior é interrompida.
-  - [ ] Testar se ao fechar a tela de mensagem de derrota, a tela do tabuleiro também é fechada.
-  - [ ] Testar se as demais casas ainda não descobertas são descobertas após encontrar uma bomba.
+- [x] Caso a casa verificada no nível fácil conter uma bomba, uma mensagem de derrota deve ser exibida.
+  - [x] Testar se a mensagem de derrota é criada.
+  - [x] Verificar se ela informa que o jogador perdeu por encontrar uma bomba.
+  - [x] Testar se ela se sobrepõe a tela anterior.
+  - [x] Testar se ela é criada separadamente.
+  - [x] Testar se, ao criar a nova tela, a tela anterior é interrompida.
+  - [x] Testar se ao fechar a tela de mensagem de derrota, a tela do tabuleiro também é fechada.
+  - [x] Testar se as demais casas ainda não descobertas são descobertas após encontrar uma bomba.
 
 <Br>
 
 **37** 
-- [ ] Caso a casa verificada no nível intermediário conter uma bomba, uma mensagem de derrota deve ser exibida.
-  - [ ] Testar se a mensagem de derrota é criada.
-  - [ ] Verificar se ela informa que o jogador perdeu por encontrar uma bomba.
-  - [ ] Testar se ela se sobrepõe a tela anterior.
-  - [ ] Testar se ela é criada separadamente.
-  - [ ] Testar se, ao criar a nova tela, a tela anterior é interrompida.
-  - [ ] Testar se ao fechar a tela de mensagem de derrota, a tela do tabuleiro também é fechada.
-  - [ ] Testar se as demais casas ainda não descobertas são descobertas após encontrar uma bomba.
+- [x] Caso a casa verificada no nível intermediário conter uma bomba, uma mensagem de derrota deve ser exibida.
+  - [x] Testar se a mensagem de derrota é criada.
+  - [x] Verificar se ela informa que o jogador perdeu por encontrar uma bomba.
+  - [x] Testar se ela se sobrepõe a tela anterior.
+  - [x] Testar se ela é criada separadamente.
+  - [x] Testar se, ao criar a nova tela, a tela anterior é interrompida.
+  - [x] Testar se ao fechar a tela de mensagem de derrota, a tela do tabuleiro também é fechada.
+  - [x] Testar se as demais casas ainda não descobertas são descobertas após encontrar uma bomba.
 
 <Br>
 
 **38** 
-- [ ] Caso a casa verificada no nível difícil conter uma bomba, uma mensagem de derrota deve ser exibida.
-  - [ ] Testar se a mensagem de derrota é criada.
-  - [ ] Verificar se ela informa que o jogador perdeu por encontrar uma bomba.
-  - [ ] Testar se ela se sobrepõe a tela anterior.
-  - [ ] Testar se ela é criada separadamente.
-  - [ ] Testar se, ao criar a nova tela, a tela anterior é interrompida.
-  - [ ] Testar se ao fechar a tela de mensagem de derrota, a tela do tabuleiro também é fechada.
-  - [ ] Testar se as demais casas ainda não descobertas são descobertas após encontrar uma bomba.
+- [x] Caso a casa verificada no nível difícil conter uma bomba, uma mensagem de derrota deve ser exibida.
+  - [x] Testar se a mensagem de derrota é criada.
+  - [x] Verificar se ela informa que o jogador perdeu por encontrar uma bomba.
+  - [x] Testar se ela se sobrepõe a tela anterior.
+  - [x] Testar se ela é criada separadamente.
+  - [x] Testar se, ao criar a nova tela, a tela anterior é interrompida.
+  - [x] Testar se ao fechar a tela de mensagem de derrota, a tela do tabuleiro também é fechada.
+  - [x] Testar se as demais casas ainda não descobertas são descobertas após encontrar uma bomba.
 
 <Br>
 
