@@ -250,11 +250,12 @@ def testar_se_apos_verificacao_outras_casas_sao_afetadas_facil():
     for l in range(tf.linhas):
         for c in range(tf.colunas):
             if l == 3 and c == 3:
-                pass
+                continue
             if tf.matrizDoJogo[l][c]['text'] == str(int) or tf.matrizDoJogo[l][c]['text'] == 'X':
                 alterado = True
 
     assert alterado == False
+
 
 def testar_se_apos_verificacao_outras_casas_sao_afetadas_intermediario():
     ti = TelaDoJogo(10, 16, 30, tela)
@@ -268,11 +269,12 @@ def testar_se_apos_verificacao_outras_casas_sao_afetadas_intermediario():
     for l in range(ti.linhas):
         for c in range(ti.colunas):
             if l == 5 and c == 6:
-                pass
+                continue
             if ti.matrizDoJogo[l][c]['text'] == str(int) or ti.matrizDoJogo[l][c]['text'] == 'X':
                 alterado = True
 
     assert alterado == False
+
 
 def testar_se_apos_verificacao_outras_casas_sao_afetadas_dificil():
     tf = TelaDoJogo(24, 24, 100, tela)
@@ -286,8 +288,59 @@ def testar_se_apos_verificacao_outras_casas_sao_afetadas_dificil():
     for l in range(tf.linhas):
         for c in range(tf.colunas):
             if l == 10 and c == 12:
-                pass
+                continue
             if tf.matrizDoJogo[l][c]['text'] == str(int) or tf.matrizDoJogo[l][c]['text'] == 'X':
                 alterado = True
 
     assert alterado == False
+
+
+def testar_se_e_possivel_adicionar_bandeira_em_casa_verificada_facil():
+    tf = TelaDoJogo(8, 8, 10, tela)
+    possivelAdicionar = False
+
+    try:
+        tf.verificarCasa(tf.matrizDoJogo[0][2])
+    except:
+        RecursionError
+
+    tf.adicionarBandeira(0, 2)
+
+    if tf.matrizDoJogo[0][2]['text'] == 'P':
+        possivelAdicionar = True
+
+    assert possivelAdicionar == False
+
+
+def testar_se_e_possivel_adicionar_bandeira_em_casa_verificada_intermediario():
+    ti = TelaDoJogo(10, 16, 30, tela)
+    possivelAdicionar = False
+
+    try:
+        ti.verificarCasa(ti.matrizDoJogo[0][2])
+    except:
+        RecursionError
+
+    ti.adicionarBandeira(0, 2)
+
+    if ti.matrizDoJogo[0][2]['text'] == 'P':
+        possivelAdicionar = True
+
+    assert possivelAdicionar == False
+
+
+def testar_se_e_possivel_adicionar_bandeira_em_casa_verificada_dificil():
+    td = TelaDoJogo(24, 24, 100, tela)
+    possivelAdicionar = False
+
+    try:
+        td.verificarCasa(td.matrizDoJogo[0][2])
+    except:
+        RecursionError
+
+    td.adicionarBandeira(0, 2)
+
+    if td.matrizDoJogo[0][2]['text'] == 'P':
+        possivelAdicionar = True
+
+    assert possivelAdicionar == False
