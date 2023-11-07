@@ -459,26 +459,26 @@
 <Br>
 
 **39**
-- [ ] Em situação de derrota no nível fácil, o tabuleiro deve ser desativado e apenas revelar as casa que contém bombas.
-  - [ ] Testar se o tabuleiro é desativado após encontrar uma bomba.
-  - [ ] Testar se as demais casas já verificadas permanecem como estão.
-  - [ ] Testar se novas casas que não contém bombas são reveladas.
+- [x] Em situação de derrota no nível fácil, o tabuleiro deve ser desativado e apenas revelar as casa que contém bombas.
+  - [x] Testar se o tabuleiro é desativado após encontrar uma bomba.
+  - [x] Testar se as demais casas já verificadas permanecem como estão.
+  - [x] Testar se novas casas que não contém bombas são reveladas.
 
 <Br>
 
 **40**
-- [ ] Em situação de derrota no nível intermediário, o tabuleiro deve ser desativado e apenas revelar as casa que contém bombas.
-  - [ ] Testar se o tabuleiro é desativado após encontrar uma bomba.
-  - [ ] Testar se as demais casas já verificadas permanecem como estão.
-  - [ ] Testar se novas casas que não contém bombas são reveladas.
+- [x] Em situação de derrota no nível intermediário, o tabuleiro deve ser desativado e apenas revelar as casa que contém bombas.
+  - [x] Testar se o tabuleiro é desativado após encontrar uma bomba.
+  - [x] Testar se as demais casas já verificadas permanecem como estão.
+  - [x] Testar se novas casas que não contém bombas são reveladas.
 
 <Br>
 
 **41**
-- [ ] Em situação de derrota no nível difícil, o tabuleiro deve ser desativado e apenas revelar as casa que contém bombas.
-  - [ ] Testar se o tabuleiro é desativado após encontrar uma bomba.
-  - [ ] Testar se as demais casas já verificadas permanecem como estão.
-  - [ ] Testar se novas casas que não contém bombas são reveladas.
+- [x] Em situação de derrota no nível difícil, o tabuleiro deve ser desativado e apenas revelar as casa que contém bombas.
+  - [x] Testar se o tabuleiro é desativado após encontrar uma bomba.
+  - [x] Testar se as demais casas já verificadas permanecem como estão.
+  - [x] Testar se novas casas que não contém bombas são reveladas.
 
 <Br>
 
