@@ -28,21 +28,21 @@ class TelaDoJogo:
         self.adicionarBombas()
 
     def adicionarBandeira(self, x, y):
-        # self.clique = True
-        # self.qtdBandeiras += 1
+        self.clique = True
 
-        # if self.qtdBandeiras > self.bombas:
-        #     self.qtdBandeiras = self.bombas
-        self.matrizDoJogo[x][y]['text'] = 'P'
-        print(f'Adicionar bandeira')
+        if self.qtdBandeiras > self.bombas:
+            self.qtdBandeiras = self.bombas
 
-    def removerBandeira(self, casa):
-        if casa['text'] == 'P':
+        elif self.qtdBandeiras < self.bombas and self.matrizDoJogo[x][y]['text'] == '':
+            self.matrizDoJogo[x][y]['text'] = 'P'
+            self.matrizDoJogo[x][y]['fg'] = '#000C20'
+            self.matrizDoJogo[x][y]['bg'] = '#F0EDE0'
+            self.qtdBandeiras += 1
+            print(f'Adicionar bandeira')
+
+        elif self.matrizDoJogo[x][y]['text'] == 'P':
+            self.matrizDoJogo[x][y]['text'] = ''
             self.qtdBandeiras -= 1
-
-            if self.qtdBandeiras > self.bombas:
-                self.qtdBandeiras = self.bombas
-            casa['text'] = ''
 
     def criarTabuleiro(self):
         self.root.geometry(f"{self.x}x{self.y}")
@@ -57,15 +57,15 @@ class TelaDoJogo:
                 casa.place(x=posx, y=posy, width=self.tamanhoDaCasa,
                            height=self.tamanhoDaCasa)
                 casa['bg'] = '#E3E7F1'
-                casa.bind('<Button-3>', lambda Event, x=linha, y=coluna: self.adicionarBandeira(x,y))
+                casa.bind('<Button-3>', lambda Event, x=linha,
+                          y=coluna: self.adicionarBandeira(x, y))
                 linhas.append(casa)
             self.matrizDoJogo.append(linhas)
 
-
         if self.linhas == 8:
-            TelaDoJogo.d= 'fácil'
+            TelaDoJogo.d = 'fácil'
         elif self.linhas == 16:
-            TelaDoJogo.d= 'intermediário'
+            TelaDoJogo.d = 'intermediário'
         elif self.linhas == 24:
             TelaDoJogo.d = 'difícil'
 
@@ -116,7 +116,6 @@ class TelaDoJogo:
                         qtdBombasPerto += 1
         return qtdBombasPerto
 
-    # Função para verificar a casa
     def verificarCasa(self, casaEspecifica):
         xX = -1
         yY = -1
@@ -127,8 +126,6 @@ class TelaDoJogo:
                     xX = linhaAtual
                     yY = colunaAtual
         self.jogou = True
-        # print(f'Casa verificada: {xX},{yY} \t tem bomba? {self.casasRandomicas[xX][yY]}')
-        # self.matrizDoJogo[xX][yY].bind('<Double-Button-1>', self.adicionarBandeira())
 
         if self.casasRandomicas[xX][yY] == False:
             vizinhos = self.calcularBombasAdjacentes(xX, yY)
