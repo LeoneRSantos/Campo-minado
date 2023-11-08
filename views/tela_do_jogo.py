@@ -14,6 +14,7 @@ class TelaDoJogo:
         self.clique = False
         self.qtdBandeiras = 0
         self.perdeu = False
+        self.venceu = False
         self.root = root
         self.linhas = linhas
         self.colunas = colunas
@@ -116,9 +117,24 @@ class TelaDoJogo:
                         qtdBombasPerto += 1
         return qtdBombasPerto
 
+    def verificarVitoria(self):
+        for linha in range(self.linhas):
+            for coluna in range(self.colunas):
+                if self.casasRandomicas[linha][coluna] == True:
+                    if self.matrizDoJogo[linha][coluna]['text'] == 'P':
+                        self.venceu = True
+                        janelaVenceu = Toplevel(self.root)
+                        janelaVenceu.title("Você venceu!")
+                        janelaVenceu.geometry("300x200")
+
+                        Label(
+                            janelaVenceu, text="Parabéns! Você conseguiu vencer o jogo.").pack()
+
     def verificarCasa(self, casaEspecifica):
         xX = -1
         yY = -1
+
+        self.verificarVitoria()
 
         for linhaAtual in range(len(self.matrizDoJogo)):
             for colunaAtual in range(len(self.matrizDoJogo[linhaAtual])):
