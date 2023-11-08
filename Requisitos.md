@@ -483,26 +483,26 @@
 <Br>
 
 **42**
-- [ ] Deve ser possível adicionar uma bandeira nas casas em que o jogador supõe conter bomba no nível fácil.
-  - [ ] Testar se é possível adicionar uma bandeira em qualquer casa.
-  - [ ] Testar se é possível adicionar uma bandeira numa casa já verificada com adjacência.
-  - [ ] Testar se é possível adicionar uma bandeira numa casa que foi revelada contendo bomba.
+- [x] Deve ser possível adicionar uma bandeira nas casas em que o jogador supõe conter bomba no nível fácil.
+  - [x] Testar se é possível adicionar uma bandeira em qualquer casa.
+  - [x] Testar se é possível adicionar uma bandeira numa casa já verificada com adjacência.
+  - [x] Testar se é possível adicionar uma bandeira numa casa que foi revelada contendo bomba.
 
 <Br>
 
 **43**
-- [ ] Deve ser possível adicionar uma bandeira nas casas em que o jogador supõe conter bomba no nível intermediário.
-  - [ ] Testar se é possível adicionar uma bandeira em qualquer casa.
-  - [ ] Testar se é possível adicionar uma bandeira numa casa já verificada com adjacência.
-  - [ ] Testar se é possível adicionar uma bandeira numa casa que foi revelada contendo bomba.
+- [x] Deve ser possível adicionar uma bandeira nas casas em que o jogador supõe conter bomba no nível intermediário.
+  - [x] Testar se é possível adicionar uma bandeira em qualquer casa.
+  - [x] Testar se é possível adicionar uma bandeira numa casa já verificada com adjacência.
+  - [x] Testar se é possível adicionar uma bandeira numa casa que foi revelada contendo bomba.
 
 <Br>
 
 **44**
-- [ ] Deve ser possível adicionar uma bandeira nas casas em que o jogador supõe conter bomba no nível difícil.
-  - [ ] Testar se é possível adicionar uma bandeira em qualquer casa.
-  - [ ] Testar se é possível adicionar uma bandeira numa casa já verificada com adjacência.
-  - [ ] Testar se é possível adicionar uma bandeira numa casa que foi revelada contendo bomba.
+- [x] Deve ser possível adicionar uma bandeira nas casas em que o jogador supõe conter bomba no nível difícil.
+  - [x] Testar se é possível adicionar uma bandeira em qualquer casa.
+  - [x] Testar se é possível adicionar uma bandeira numa casa já verificada com adjacência.
+  - [x] Testar se é possível adicionar uma bandeira numa casa que foi revelada contendo bomba.
 
 <Br>
 
@@ -520,3 +520,23 @@
   - [x] Testar se existe alguma casa com bomba coberta no nível intermediário.
   - [x] Testar se existe alguma casa com bomba coberta no nível difícil.
 
+<Br>
+
+**47**
+- [x] Em situação de vitória no nível fácil, uma nova tela informando a vitória deve ser gerada.
+  - [x] Testar se é possível vencer.
+  - [x] Testar se a tela de vitória é gerada.
+
+<Br>
+
+**48**
+- [x] Em situação de vitória no nível intermediário, uma nova tela informando a vitória deve ser gerada.
+  - [x] Testar se é possível vencer.
+  - [x] Testar se a tela de vitória é gerada.
+
+<Br>
+
+**49**
+- [x] Em situação de vitória no nível difícil, uma nova tela informando a vitória deve ser gerada.
+  - [x] Testar se é possível vencer.
+  - [x] Testar se a tela de vitória é gerada.
