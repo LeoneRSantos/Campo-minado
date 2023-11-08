@@ -7,11 +7,14 @@ class TelaDoJogo:
     # Tamanho padrão de casas
     tamanhoDaCasa = 28
     informar = False
+    d = ''
 
     def __init__(self, linhas, colunas, bombas, root):
+        self.jogoIniciado = False
         self.clique = False
         self.qtdBandeiras = 0
         self.perdeu = False
+        self.venceu = False
         self.root = root
         self.linhas = linhas
         self.colunas = colunas
@@ -25,21 +28,22 @@ class TelaDoJogo:
         self.criarTabuleiro()
         self.adicionarBombas()
 
-    def adicionarBandeira(self,casa):
+    def adicionarBandeira(self, x, y):
         self.clique = True
-        self.qtdBandeiras += 1
 
         if self.qtdBandeiras > self.bombas:
-            self.qtdBandeiras = self.bombas 
-        casa['text'] = 'P'
+            self.qtdBandeiras = self.bombas
 
-    def removerBandeira(self,casa):
-        if casa['text'] == 'P':
+        elif self.qtdBandeiras < self.bombas and self.matrizDoJogo[x][y]['text'] == '':
+            self.matrizDoJogo[x][y]['text'] = 'P'
+            self.matrizDoJogo[x][y]['fg'] = '#000C20'
+            self.matrizDoJogo[x][y]['bg'] = '#F0EDE0'
+            self.qtdBandeiras += 1
+            print(f'Adicionar bandeira')
+
+        elif self.matrizDoJogo[x][y]['text'] == 'P':
+            self.matrizDoJogo[x][y]['text'] = ''
             self.qtdBandeiras -= 1
-
-            if self.qtdBandeiras > self.bombas:
-                self.qtdBandeiras = self.bombas 
-            casa['text'] = ''
 
     def criarTabuleiro(self):
         self.root.geometry(f"{self.x}x{self.y}")
@@ -53,35 +57,43 @@ class TelaDoJogo:
                 posy = coluna * self.tamanhoDaCasa
                 casa.place(x=posx, y=posy, width=self.tamanhoDaCasa,
                            height=self.tamanhoDaCasa)
+                casa['bg'] = '#E3E7F1'
+                casa.bind('<Button-3>', lambda Event, x=linha,
+                          y=coluna: self.adicionarBandeira(x, y))
                 linhas.append(casa)
             self.matrizDoJogo.append(linhas)
-        
-        d = ''
-        self.clique = True
 
         if self.linhas == 8:
-            d = 'fácil'
+            TelaDoJogo.d = 'fácil'
         elif self.linhas == 16:
-            d = 'Intermediário'
+            TelaDoJogo.d = 'intermediário'
         elif self.linhas == 24:
-            d = 'difícil'
+            TelaDoJogo.d = 'difícil'
+
+        self.jogoIniciado = True
 
         tutorial = Toplevel(self.root)
         tutorial.title("Como jogar")
         tutorial.geometry("500x300")
-        Label(tutorial,text=f'- Você escolheu o nível {d}').pack()
-        Label(tutorial,text=f'- Seu tabuleiro tem dimensões {self.colunas} x {self.linhas} e {self.bombas} bombas').pack()
-        Label(tutorial,text=f'- Você pode adicionar uma bandeira no local que imaginar ter uma bomba.').pack()
-        Label(tutorial,text=f'- Você tem um total de {self.bombas} bandeiras.').pack()
-        Label(tutorial,text=f'- Para vencer o jogo, você deve marcar todos os pontos que têm bomba \ncom bandeiras.').pack()
-        Label(tutorial,text=f'- Caso clique em um local com bomba, você perde.').pack()
-
+        Label(
+            tutorial, text=f'- Você escolheu o nível {TelaDoJogo.d}').pack(padx=8, pady=8, anchor="center")
+        Label(tutorial, text=f'- Seu tabuleiro tem dimensões {self.colunas} x {self.linhas} e {self.bombas} bombas').pack(
+            padx=8, pady=8, anchor="center")
+        Label(tutorial, text=f'- Você pode adicionar uma bandeira no local que imaginar ter uma bomba.').pack(
+            padx=8, pady=8, anchor="center")
+        Label(tutorial, text=f'- Você tem um total de {self.bombas} bandeiras.').pack(
+            padx=8, pady=8, anchor="center")
+        Label(tutorial, text=f'- Para vencer o jogo, você deve marcar todos os pontos que têm bomba \ncom bandeiras.').pack(
+            padx=8, pady=8, anchor="center")
+        Label(tutorial, text=f'- Caso clique em um local com bomba, você perde.').pack(
+            padx=8, pady=8, anchor="center")
 
     def revelarBombas(self):
         for linha in range(len(self.matrizDoJogo)):
             for coluna in range(len(self.matrizDoJogo[linha])):
                 if self.casasRandomicas[linha][coluna]:
-                    self.matrizDoJogo[linha][coluna]['text'] = "B"
+                    self.matrizDoJogo[linha][coluna]['text'] = "X"
+                    self.matrizDoJogo[linha][coluna]['bg'] = '#970C10'
 
     def adicionarBombas(self):
         self.casasRandomicas = [[False for _ in range(
@@ -105,31 +117,51 @@ class TelaDoJogo:
                         qtdBombasPerto += 1
         return qtdBombasPerto
 
-    # Função para verificar a casa
+    def verificarVitoria(self):
+        for linha in range(self.linhas):
+            for coluna in range(self.colunas):
+                if self.casasRandomicas[linha][coluna] == True:
+                    if self.matrizDoJogo[linha][coluna]['text'] == 'P':
+                        self.venceu = True
+                        janelaVenceu = Toplevel(self.root)
+                        janelaVenceu.title("Você venceu!")
+                        janelaVenceu.geometry("300x200")
+
+                        Label(
+                            janelaVenceu, text="Parabéns! Você conseguiu vencer o jogo.").pack()
+
     def verificarCasa(self, casaEspecifica):
         xX = -1
         yY = -1
 
+        self.verificarVitoria()
+
         for linhaAtual in range(len(self.matrizDoJogo)):
             for colunaAtual in range(len(self.matrizDoJogo[linhaAtual])):
                 if self.matrizDoJogo[linhaAtual][colunaAtual] == casaEspecifica:
-                    xX = colunaAtual
-                    yY = linhaAtual
+                    xX = linhaAtual
+                    yY = colunaAtual
         self.jogou = True
-        # print(f'Casa verificada: {xX},{yY} \t tem bomba? {self.casasRandomicas[xX][yY]}')
-        
-        # casaEspecifica.bind("<Button-3>", self.adicionarBandeira)
 
         if self.casasRandomicas[xX][yY] == False:
-           vizinhos = self.calcularBombasAdjacentes(yY, xX) 
-           casaEspecifica['text'] = str(vizinhos)
-           casaEspecifica['state'] = "disabled" 
+            vizinhos = self.calcularBombasAdjacentes(xX, yY)
+            casaEspecifica['text'] = str(vizinhos)
+            casaEspecifica['fg'] = '#000C20'
+            casaEspecifica['bg'] = '#F0EDE0'
 
+            if vizinhos == 0:
+                for l in range(-1, 2):
+                    for c in range(-1, 2):
+                        if 0 <= xX + l < self.linhas and 0 <= yY + c < self.colunas:
+                            self.verificarCasa(
+                                self.matrizDoJogo[xX + l][yY + c])
+                            self.matrizDoJogo[xX + l][yY + c]['fg'] = '#000C20'
+                            self.matrizDoJogo[xX + l][yY + c]['bg'] = '#F0EDE0'
 
         minado = self.casasRandomicas[xX][yY]
         if (minado):
             self.perdeu = True
-            casaEspecifica['text'] = "B"
+            casaEspecifica['text'] = "X"
             self.revelarBombas()
             janelaPerdeu = Toplevel(self.root)
             janelaPerdeu.title("Você perdeu")
@@ -138,11 +170,11 @@ class TelaDoJogo:
             Label(janelaPerdeu, text="Infelizmente você encontrou uma bomba").pack()
             for linhaAtual in range(len(self.matrizDoJogo)):
                 for colunaAtual in range(len(self.matrizDoJogo[linhaAtual])):
-                    self.matrizDoJogo[linhaAtual][colunaAtual]['state'] = "disabled" 
+                    self.matrizDoJogo[linhaAtual][colunaAtual]['state'] = "disabled"
 
         if casaEspecifica['text'] == 'P':
             TelaDoJogo.informar = True
-            
+
             casaBandeira = Toplevel(self.tela)
             casaBandeira.title("Casa com bandeira")
             casaBandeira.geometry("300x200")
@@ -150,6 +182,10 @@ class TelaDoJogo:
 
     def jogar(self):
         self.root.mainloop()
+        self.jogoIniciado = True
+
+        return bool(self.jogoIniciado)
 
     def encerrarJogo(self):
         self.root.destroy()
+        self.jogoIniciado = False
